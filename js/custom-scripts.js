@@ -1091,8 +1091,8 @@ jQuery(function ($) {
 
         map = new GMaps({
             div: '#map_canvas',
-            lat: -12.043333,
-            lng: -77.028333
+            lat: -31.2585243,
+            lng: -75.7043354,
         });
 
     }

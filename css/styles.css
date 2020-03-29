@@ -968,6 +968,18 @@ header.one-page .navbar-nav > li > a span {
 .menu-container .navbar-nav li ul.drop-down {
   top: 66px;
 }
+
+.login-btn {
+ 
+background: #FF4419;
+color: #fff !important;
+height: 50px;
+}
+
+a.login-btn:hover {
+background: #f69791 !important;
+}
+
 /***********************************************************************************************/
 /* 04. HOME PAGE */
 /***********************************************************************************************/
@@ -5636,6 +5648,16 @@ span.border-bold-dashed {
   .copyright-text {
     text-align: center;
   }
+  
+  .login-btn {
+ 
+    background: #FF4419;
+    color: #fff !important;
+    height: 50px;
+    height: auto;
+    text-align: center;
+    }
+  
 }
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
@@ -5985,6 +6007,25 @@ span.border-bold-dashed {
   .copyright-text {
     text-align: center;
   }
+  #preloader span {
+    left: 40%;
+    margin-left: -15px;
+    margin-top: -15px;
+    position: absolute;
+    top: 50%;
+  }
+  a.logo img {
+    display: inherit;
+  }
+
+  .login-btn {
+ 
+    background: #FF4419;
+    color: #fff !important;
+    height: 50px;
+    height: auto;
+    text-align: center;
+    }
 }
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (min-width: 0px) and (max-width: 479px) {
@@ -6347,6 +6388,14 @@ span.border-bold-dashed {
   .copyright-text {
     text-align: center;
   }
+
+  .login-btn {
+ 
+    background: #FF4419;
+    color: #fff !important;
+    height: auto;
+    text-align: center;
+    }
 }
 /* Tab Portrait Size to Tab Landscape Size (devices and browsers) */
 @media only screen and (min-width: 380px) and (max-width: 480px) {
