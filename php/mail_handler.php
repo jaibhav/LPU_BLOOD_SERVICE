@@ -8,7 +8,8 @@
 
 		$to='lpubloodservice@gmail.com'; // Receiver Email ID
 		$message="Name :".$name."\n"."Subject".$subject."\n"."Phone :".$phone."\n"."Wrote the following :"."\n\n".$msg;
-		//$headers="From: ".$email;
+		$headers="From: ".$email;
+		(mail($to, $subject, $message, $headers);
 
 		// if(mail($to, $subject, $message, $headers)){
 		// 	echo "<h1>Sent Successfully! Thank you"." ".$name.", We will contact you shortly!</h1>";
