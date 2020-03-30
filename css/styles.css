@@ -3205,7 +3205,8 @@ a.btn-cta-3:hover {
 #contact-form input[type=text],
 #contact-form input[type=email],
 #contact-form input[type=url],
-#contact-form input[type=password] {
+#contact-form input[type=password],
+#contact-form input[type=tel] {
   border: 0px;
   border-bottom: 1px solid #EEE;
   line-height: 42px;
@@ -3232,7 +3233,8 @@ a.btn-cta-3:hover {
 #contact-form input[type=text]:focus,
 #contact-form input[type=email]:focus,
 #contact-form input[type=url]:focus,
-#contact-form input[type=password]:focus {
+#contact-form input[type=password]:focus,
+#contact-form input[type=tel]:focus {
   -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.16);
   -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.16);
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.16);

@@ -225,7 +225,7 @@
 
                             <h2 class="contact-title">Say hello to us</h2>
 
-                            <form role="form" action="#" method="post" id="contact-form">
+                            <form role="form" action="php/mail_handler.php" method="post" id="contact-form">
 
                                 <div class="form-group">
                                     <input type="text" class="form-control" id="user_name" name="user_name" placeholder="Name" data-msg="Please Write Your Name" />
@@ -233,6 +233,9 @@
 
                                 <div class="form-group">
                                     <input type="email" class="form-control" id="user_email" name="user_email" placeholder="Email" data-msg="Please Write Your Valid Email" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" id="user_phone" name="user_phone" placeholder="Phone Number" data-msg="Please Write Your Valid Phone Number" />
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control" id="email_subject" name="email_subject" placeholder="Subject" data-msg="Please Write Your Message Subject" />
