@@ -1139,7 +1139,7 @@ background: #f69791 !important;
   background: #F9FAFB !important;
 }
 /*----- SECTION SLIDER ----*/
-.slider-wrap {
+/* .slider-wrap {
   clear: both;
 }
 #slider_1 {
@@ -1375,7 +1375,7 @@ background: #f69791 !important;
 }
 .owl-carousel .owl-item {
   overflow: hidden !important;
-}
+} */
 /*-----  SECTION BANNER----*/
 .section-banner {
   background-image: url("../images/home_1.jpg");
@@ -1402,7 +1402,7 @@ background: #f69791 !important;
   text-transform: uppercase;
   text-align: center;
   width: max-content;
-  background-color: brown;
+  background-color: #a52a2a96;
   padding-left: 5px;
   padding-right: 5px;
   
@@ -1421,7 +1421,7 @@ background: #f69791 !important;
   color: #FFFFFF;
   margin-left: 100px;
   width: auto;
-  background-color: brown;
+  background-color: #a52a2a96;
 }
 .section-banner .banner-content a.btn-slider {
   font-size: 16px;
@@ -1506,7 +1506,7 @@ background: #f69791 !important;
   text-align: left;
 }
 /*-----  SECTION BLOG ----*/
-.section-home-blog {
+/* .section-home-blog {
   background: #F9FAFB;
 }
 .latest-news-container {
@@ -1581,7 +1581,7 @@ background: #f69791 !important;
   top: 50%;
   left: 50%;
   margin-top: -30px;
-}
+} */
 /*----- SECTION HIGHLIGHT ----*/
 .highlight-layout-1 {
   margin: 24px 0;
@@ -4458,6 +4458,7 @@ ul.pagination li:last-child {
 }
 .about-details {
   clear: both;
+  
 }
 .about-details .about-heading {
   position: relative;
@@ -4544,7 +4545,7 @@ ul.custom-bullet-list li:before {
 /***********************************************************************************************/
 /* 09. GALLERY PAGE */
 /***********************************************************************************************/
-.section-gallery-block-parallax {
+/* .section-gallery-block-parallax {
   background-attachment: scroll;
   background-color: transparent;
   background-image: url('../images/bg-geometry.html');
@@ -4743,7 +4744,7 @@ ul.custom-bullet-list li:before {
 }
 .gallery-carousel:hover .owl-nav {
   opacity: 1;
-}
+} */
 /*----- NEWSLETTER LAYOUT 01 ----*/
 .horizontal-newsletter {
   position: relative;
@@ -4854,26 +4855,6 @@ footer p {
 .footer-widget-area .footer-widget .footer-logo {
   margin-bottom: 15px;
 }
-.footer-widget-area .footer-subscription input[type="email"] {
-  background: #444444;
-  border: 0 solid #CCCCCC;
-  border-radius: 0;
-  height: 48px;
-  color: #FFFFFF;
-}
-.footer-widget-area .footer-subscription input[type="email"]:focus {
-  box-shadow: none;
-}
-.footer-widget-area .footer-subscription input[type="submit"] {
-  background: #EF3D32;
-  border: 0 solid #CCCCCC;
-  color: #FFFFFF;
-  height: 42px;
-  letter-spacing: 2px;
-  margin-top: 6px;
-  padding: 0 18px;
-  text-transform: uppercase;
-}
 .footer-widget-area .footer-widget-header h3 {
   position: relative;
   font-size: 24px;
@@ -4894,8 +4875,7 @@ footer p {
 }
 .footer-widget-area .footer-useful-links li {
   margin-bottom: 8px;
-  width: 50%;
-  float: left;
+  
 }
 .footer-widget-area .fa-footer {
   display: inline;
@@ -5447,7 +5427,7 @@ span.border-bold-dashed {
 /* 14. RESPONSIVE STYLING */
 /***********************************************************************************************/
 @media only screen and (min-width: 992px) and (max-width: 1300px) {
-  #slider_1 {
+  /* #slider_1 {
     text-align: center;
   }
   #slider_1 .item img {
@@ -5466,7 +5446,7 @@ span.border-bold-dashed {
   #slider_1 .slider-content h2 {
     font-size: 42px;
     line-height: 48px;
-  }
+  } */
 }
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (max-width: 991px) {
@@ -5531,7 +5511,7 @@ span.border-bold-dashed {
     font-size: 15px;
     padding-bottom: 22px;
   }
-  #slider_1 {
+  /* #slider_1 {
     text-align: center;
   }
   #slider_1 .item img {
@@ -5551,7 +5531,7 @@ span.border-bold-dashed {
   #slider_1 .slider-content h2 {
     font-size: 42px;
     line-height: 48px;
-  }
+  } */
   .margin-top-appointment-reverse {
     margin-top: 0 !important;
   }
@@ -5680,7 +5660,7 @@ span.border-bold-dashed {
     font-weight: 600;
     padding: 12px 24px;
   }
-  #slider_1 .slider_item_container {
+  /* #slider_1 .slider_item_container {
     min-height: 500px;
   }
   #slider_1 .slider-content {
@@ -5728,7 +5708,7 @@ span.border-bold-dashed {
   #slider_1 .slider-contents-info {
     margin-top: 24px;
     padding: 42px 16px 42px;
-  }
+  } */
   .section-banner {
     padding: 130px 0px;
   }
@@ -5797,13 +5777,13 @@ span.border-bold-dashed {
     padding: 12px 6px 0 12px;
   }
   /*-----  No Padding Gallery ----*/
-  .no-padding-gallery {
+  /* .no-padding-gallery {
     clear: both;
   }
   .no-padding-gallery .gallery-container {
     padding: 0px 12px;
     margin: 0;
-  }
+  } */
   .cta-section .cta-content h2 {
     font-size: 40px;
     line-height: 50px;
@@ -6114,7 +6094,7 @@ span.border-bold-dashed {
     font-weight: 600;
     padding: 12px 24px;
   }
-  #slider_1 .slider_item_container {
+  /* #slider_1 .slider_item_container {
     min-height: 460px;
   }
   #slider_1 .slider-content {
@@ -6158,7 +6138,7 @@ span.border-bold-dashed {
     right: 0;
     border-left: 0px;
     border-bottom: 0px;
-  }
+  } */
   .section-banner {
     padding: 80px 0px;
   }
@@ -6335,9 +6315,11 @@ span.border-bold-dashed {
   .message-container-404 .message-text-404 {
     padding: 24px 0px;
   }
+  
   .about-footer {
     margin-bottom: 32px;
     padding-bottom: 22px;
+    text-align: center;
   }
   .footer-widget-area {
     padding: 42px 0 0 0;
@@ -6378,7 +6360,7 @@ span.border-bold-dashed {
 }
 /* Tab Portrait Size to Tab Landscape Size (devices and browsers) */
 @media only screen and (min-width: 380px) and (max-width: 480px) {
-  .xs-margin {
+  /* .xs-margin {
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -6394,6 +6376,6 @@ span.border-bold-dashed {
     margin-left: 120px;
     margin-right: 120px;
   }
-}
+} */
 
 /*# sourceMappingURL=styles.css.map */
