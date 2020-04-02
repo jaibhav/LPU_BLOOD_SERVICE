@@ -1,9 +1,23 @@
+<?php
+require_once "config.php";
+
+session_start();
+$username=$_SESSION['username'];
+$sql2="SELECT * FROM users WHERE username = '$username'";
+$query=mysqli_query($link,$sql2);
+$row = mysqli_fetch_array($query);
+
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: faq.php");
+    exit;
+}
+?>
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 
     
-<!-- Mirrored from templates.bwlthemes.com/blood_donation/v_2/faq.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Mar 2020 17:57:34 GMT -->
+<!-- Mirrored from templates.bwlthemes.com/blood_donation/v_2/faq.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Mar 2020 17:57:34 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=iso-8859-1" /><!-- /Added by HTTrack -->
 <head>
         <meta charset="utf-8">
@@ -78,7 +92,7 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="logo" href="index-2.html"><img alt="" src="images/logo.png"></a>
+                            <a class="logo" href="index-2.php"><img alt="" src="images/logo.png"></a>
                         </div>
 
                         <div class="navbar-collapse collapse">
@@ -87,19 +101,19 @@
                                 <li>
                                     <a href="#">Home</a>
                                     <ul class="drop-down">
-                                        <li><a href="index-2.html" title="Home Layout 01">Home 01</a></li>
-                                        <li><a href="home-2.html" title="Home Layout 02">Home 02</a></li>
+                                        <li><a href="index-2.php" title="Home Layout 01">Home 01</a></li>
+                                        <li><a href="home-2.php" title="Home Layout 02">Home 02</a></li>
                                     </ul>
                                 </li>
 
                                 
-                                <li><a href="about-us.html" title="About Us">About Us</a></li>
+                                <li><a href="about-us.php" title="About Us">About Us</a></li>
 
                                 <li>
                                     <a href="#">Campaign</a>
                                     <ul class="drop-down">
-                                        <li><a href="events.html">All Campaigns</a></li>
-                                        <li><a href="event-single.html">Single Campaign</a></li>
+                                        <li><a href="events.php">All Campaigns</a></li>
+                                        <li><a href="event-single.php">Single Campaign</a></li>
                                     </ul>
                                 </li>
 
@@ -108,27 +122,27 @@
                                         
                                         <li class="drop"><a href="#">Elements</a>
                                             <ul class="drop-down level3">
-                                                <li><a href="element-cta.html">CTA/PROMO BOX</a></li>
-                                                <li><a href="element-counter.html">Fun Facts</a></li>
-                                                <li><a href="element-logos.html">Logos/Clients</a></li>
-                                                <li><a href="element-process.html">Process</a></li>
-                                                <li><a href="element-highlights.html">Highlights Box</a></li>
-                                                <li><a href="element-service.html">Services</a></li>
-                                                <li><a href="element-subscribe.html">Subscribe</a></li>
-                                                <li><a href="element-team.html">Team</a></li>
-                                                <li><a href="element-feedback.html">Testimonials</a></li>
+                                                <li><a href="element-cta.php">CTA/PROMO BOX</a></li>
+                                                <li><a href="element-counter.php">Fun Facts</a></li>
+                                                <li><a href="element-logos.php">Logos/Clients</a></li>
+                                                <li><a href="element-process.php">Process</a></li>
+                                                <li><a href="element-highlights.php">Highlights Box</a></li>
+                                                <li><a href="element-service.php">Services</a></li>
+                                                <li><a href="element-subscribe.php">Subscribe</a></li>
+                                                <li><a href="element-team.php">Team</a></li>
+                                                <li><a href="element-feedback.php">Testimonials</a></li>
                                             </ul>
                                         </li>
                                        
                                         <li class="drop"><a href="#">Gallery</a>
                                             <ul class="drop-down level3">
-                                                <li><a href="gallery-1.html">Layout 01</a></li> 
-                                                <li><a href="gallery-2.html">Layout 02</a></li> 
+                                                <li><a href="gallery-1.php">Layout 01</a></li> 
+                                                <li><a href="gallery-2.php">Layout 02</a></li> 
 
                                             </ul>
                                         </li>
-                                         <li><a href="faq.html" title="FAQ">FAQ</a></li>
-                                        <li><a href="404.html" title="404 Page">404 Page</a></li> 
+                                         <li><a href="faq.php" title="FAQ">FAQ</a></li>
+                                        <li><a href="404.php" title="404 Page">404 Page</a></li> 
                                         <li class="drop"><a href="#">Level 3</a>
                                             <ul class="drop-down level3">
                                                 <li><a href="#">Level 3.1</a></li>
@@ -142,12 +156,12 @@
                                 <li>
                                     <a href="#">Blog</a>
                                     <ul class="drop-down">
-                                        <li><a href="blog.html">All Posts</a></li> 
-                                        <li><a href="single.html">Single Page</a></li>
+                                        <li><a href="blog.php">All Posts</a></li> 
+                                        <li><a href="single.php">Single Page</a></li>
                                     </ul>
                                 </li>
 
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="contact.php">Contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -488,35 +502,35 @@
                                     <ul class="footer-useful-links">
 
                                         <li>
-                                            <a href="index.html">
+                                            <a href="index.php">
                                                 <i class="fa fa-caret-right fa-footer"></i>
                                                 Home
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="about-us.html">
+                                            <a href="about-us.php">
                                                 <i class="fa fa-caret-right fa-footer"></i>
                                                 About Us
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="services.html">
+                                            <a href="services.php">
                                                 <i class="fa fa-caret-right fa-footer"></i>
                                                 Services
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="faq.html">
+                                            <a href="faq.php">
                                                 <i class="fa fa-caret-right fa-footer"></i>
                                                 Frequently Asked Questions
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="contact.html">
+                                            <a href="contact.php">
                                                 <i class="fa fa-caret-right fa-footer"></i>
                                                 Contact Us
                                             </a>
@@ -578,5 +592,5 @@
     </body>
 
 
-<!-- Mirrored from templates.bwlthemes.com/blood_donation/v_2/faq.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Mar 2020 17:57:34 GMT -->
+<!-- Mirrored from templates.bwlthemes.com/blood_donation/v_2/faq.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Mar 2020 17:57:34 GMT -->
 </html>

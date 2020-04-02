@@ -1,27 +1,29 @@
+<?php include 'register_script.php' ?>
+<?php
+session_start();
+ 
+if(isset($_SESSION["loggedin"])){
+    header("location: index_loggedin.php");
+    exit;
+}
+?>
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<html lang="en"> 
 
     
 <meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
 <head>
         <meta charset="utf-8">
-        <title>Contact Us</title>
+        <title>Register</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta name="description" content="Portal for finding blood donors in LPU">
         <meta name="author" content="LPU">
         <link rel="shortcut icon" href="images/favicon.png" />
 
-        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-
         <!-- The styles -->
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" >
         <link href="css/animate.css" rel="stylesheet" type="text/css" >
-        <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" >
         <link href="css/venobox.css" rel="stylesheet" type="text/css" >
         <link rel="stylesheet" href="css/styles.css" />
 
@@ -46,25 +48,25 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="logo" href="index.html"><img alt="" src="images/logo.png"></a>
+                            <a class="logo" href="index.php"><img alt="" src="images/logo.png"></a>
                         </div>
 
                         <div class="navbar-collapse collapse">
                             <ul class="nav navbar-nav navbar-right">
                                 <li>
-                                    <a href="index.html" title="Home">Home</a>
+                                    <a href="index.php" title="Home">Home</a>
                                 </li>
                                 
-                                <li><a href="about-us.html" title="About Us">About Us</a></li>
+                                <li><a href="about-us.php" title="About Us">About Us</a></li>
 
                                 <li>
-                                    <a href="services.html" title="Services">Services</a>
+                                    <a href="services.php" title="Services">Services</a>
                                 </li>
 
-                                <li><a href="#" title="Contact">Contact</a></li>
+                                <li><a href="contact.php" title="Contact">Contact</a></li>
 
                                 <li>
-                                    <a class="login-btn" href="#">Login/Sign Up</a>
+                                    <a class="login-btn" href="login.php">Login/Sign Up</a>
                                 </li>
                             </ul>
                         </div>
@@ -87,12 +89,8 @@
 
 
                         <h3>
-                            Contact Us
+                            Register    
                         </h3>
-
-                        <p class="page-breadcrumb">
-                            <a href="#">Home</a> / Contact
-                        </p>
 
 
                     </div>
@@ -107,62 +105,68 @@
 
         <section class="section-content-block">
 
+        
             <div class="container">
+                <div class="signup-form-wrapper">
 
-                <div class="row">
+                    <div class="signup-form">
 
-                    <div class ="col-md-12">
-                        <h2 class="contact-title">Contact us</h2>                           
-                    </div>               
+                        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                            <h2>Register</h2>
+                            <p class="hint-text">Create your account. It's free and only takes a minute.</p>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12"><input type="text" class="form-control" name="first_name" placeholder="First Name" required="required"></div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12"><input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required"></div>
+                                </div>        	
+                            </div>
+                            <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
+                                <input type="email" class="form-control" name="username" placeholder="Email" required="required" value="<?php echo $username; ?>">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="regno" placeholder="Registration Number" required="required">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" class="form-control" name="mobno" placeholder="Contact Number" required="required">
+                            </div>
+                            <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+                                <input type="password" class="form-control" name="password" placeholder="Password" required="required" value="<?php echo $password; ?>">
+                            </div>
+                            <div class="form-group <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
+                                <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required" value="<?php echo $confirm_password; ?>">
+                            </div>    
+                            <div class="form-group">
+                                <select class="form-control" name="bgrp" required>
+                                    <option value="" disabled selected hidden>Select your blood group</option>    
+                                    <option value="A+">A+</option>
+                                    <option value="A-">A-</option>
+                                    <option value="B+">B+</option>
+                                    <option value="B-">B-</option>
+                                    <option value="O+">O+</option>
+                                    <option value="O-">O-</option>
+                                    <option value="AB+">AB+</option>
+                                    <option value="AB-">AB-</option>
+                                </select>
+                            </div>    
+                            <div class="form-group">
+                                <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-success btn-lg btn-block">Register Now</button>
+                            </div>
+                             
+                        </form>
+                        <div class="text-center">Already have an account? <a href="login.php">Sign in</a></div>
+           
 
-                    <div class="col-md-6">
-
-                        <ul class="contact-info">
-                            <li>
-                                <span class="icon-container"><i class="fa fa-home"></i></span>
-                                <address>UniHospital, LPU, Phagwara, Punjab </address>
-                            </li>
-                        </ul>                        
-
+            
+                        
                     </div>
 
-                    <div class="col-md-6">
-
-                        <ul class="contact-info">
-
-                            <li>
-                                <span class="icon-container"><i class="fa fa-phone"></i></span>
-                                <address><a href="#">+91-7017349434</a></address>
-                            </li>
-
-                        </ul>                        
-
-                    </div>
-
-                    <div class="col-md-6">
-                        <ul class="contact-info">
-                            <li>
-                                <span class="icon-container"><i class="fa fa-envelope"></i></span>
-                                <address><a href="mailto:">lpubloodservice@gmail.com</a></address>
-                            </li>
-                        </ul>                        
-
-                    </div>
-
-                    <div class="col-md-6">
-
-                        <ul class="contact-info">
-                            <li>
-                                <span class="icon-container"><i class="fa fa-globe"></i></span>
-                                <address><a href="#">www.lbslpu.com</a></address>
-                            </li>
-                        </ul>                        
-
-                    </div>                    
-
-                </div> 
-
+                </div> <!-- end .row  -->
             </div>
+            
+       
 
         </section>
 
@@ -170,59 +174,7 @@
 
             <div class="container">
 
-                <div class="row">
-
-                    <div class="col-sm-6 wow fadeInLeft">
-
-                        <div class="contact-form-block">
-
-                            <h2 class="contact-title">Say hello to us</h2>
-
-                            <form role="form" action="php/mail_handler.php" method="post" id="contact-form">
-
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="user_name" name="user_name" placeholder="Name" data-msg="Please Write Your Name" />
-                                </div>
-
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="user_email" name="user_email" placeholder="Email" data-msg="Please Write Your Valid Email" />
-                                </div>
-                                <div class="form-group">
-                                    <input type="tel" class="form-control" id="user_phone" name="user_phone" placeholder="Phone Number" data-msg="Please Write Your Valid Phone Number" />
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="email_subject" name="email_subject" placeholder="Subject" data-msg="Please Write Your Message Subject" />
-                                </div>
-
-                                <div class="form-group">
-                                    <textarea class="form-control" rows="5" name="email_message" id="email_message" placeholder="Message" data-msg="Please Write Your Message" ></textarea>
-                                </div>
-
-                                <div class="form-group">
-                                    <button type="submit" class="btn btn-theme">Send Now</button>
-                                </div>
-
-                            </form>
-
-                        </div> <!-- end .contact-form-block  -->
-
-                    </div> <!--  end col-sm-6  -->
-
-                    <div class="col-sm-6 wow fadeInRight">
-
-                        <h2 class="contact-title">Our Location</h2>
-
-
-                        <div class="section-google-map-block wow fadeInUp">
-
-                            <div id="map_canvas"></div>
-
-                        </div> <!-- end .section-content-block  -->                            
-
-                    </div> <!--  end col-sm-6  -->                    
-
-                </div> <!-- end row  -->
-
+                
             </div> <!--  end .container -->
 
         </section> <!-- end .section-content-block  -->
@@ -309,35 +261,35 @@
                                     <ul class="footer-useful-links">
 
                                         <li>
-                                            <a href="index.html">
+                                            <a href="index.php">
                                                 <i class="fa fa-caret-right fa-footer"></i>
                                                 Home
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="about-us.html">
+                                            <a href="about-us.php">
                                                 <i class="fa fa-caret-right fa-footer"></i>
                                                 About Us
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="services.html">
+                                            <a href="services.php">
                                                 <i class="fa fa-caret-right fa-footer"></i>
                                                 Services
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="faq.html">
+                                            <a href="faq.php">
                                                 <i class="fa fa-caret-right fa-footer"></i>
                                                 Frequently Asked Questions
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="contact.html">
+                                            <a href="contact.php">
                                                 <i class="fa fa-caret-right fa-footer"></i>
                                                 Contact Us
                                             </a>
@@ -391,12 +343,9 @@
         <script src="js/jquery.backTop.min.js"></script>
         <script src="js/waypoints.min.js"></script>
         <script src="js/waypoints-sticky.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
         <script src="js/jquery.stellar.min.js"></script>
         <script src="js/jquery.counterup.min.js"></script>
         <script src="js/venobox.min.js"></script>
-        <script src="https://maps.google.com/maps/api/js?key=AIzaSyDTSNL3kqBW0Go4Fa2xOf58_uWU6vXKnT8"></script>
-        <script src="js/gmaps.js"></script>
         <script src="js/custom-scripts.js"></script>
 
     </body>

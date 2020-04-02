@@ -1,6 +1,13 @@
+<?php
+session_start();
+ 
+if(isset($_SESSION["loggedin"])){
+    header("location: index_loggedin.php");
+    exit;
+}
+?>
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<html lang="en">
 
     
 <meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
@@ -10,11 +17,6 @@
         <meta name="description" content="Portal for finding blood donors in LPU">
         <meta name="author" content="LPU">
         <link rel="shortcut icon" href="images/favicon.png" />
-
-        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
 
         <!-- The styles -->
         <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -45,7 +47,7 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="logo" href="index.html"><img alt="" src="images/logo.png"></a>
+                            <a class="logo" href="index.php"><img alt="" src="images/logo.png"></a>
                         </div>
 
                         <div class="navbar-collapse collapse">
@@ -54,16 +56,16 @@
                                     <a href="#" title="Home">Home</a>
                                 </li>
                                 
-                                <li><a href="about-us.html" title="About Us">About Us</a></li>
+                                <li><a href="about-us.php" title="About Us">About Us</a></li>
 
                                 <li>
-                                    <a href="services.html" title="Services">Services</a>
+                                    <a href="services.php" title="Services">Services</a>
                                 </li>
 
-                                <li><a href="contact.html" title="Contact">Contact</a></li>
+                                <li><a href="contact.php" title="Contact">Contact</a></li>
 
                                 <li>
-                                    <a class="login-btn" href="#">Login/Sign Up</a>
+                                    <a class="login-btn" href="login.php">Login/Sign Up</a>
                                 </li>
                             </ul>
                         </div>
@@ -90,7 +92,7 @@
                                 Donating blood not only saves the life also save donor's lives.
                             </h3>
 
-                            <a href="#" class="btn btn-theme margin-top-32">JOIN NOW</a>
+                            <a href="login.php" class="btn btn-theme margin-top-32">JOIN NOW</a>
                         </div>
                     </div> <!-- end .col-md-12  -->
                 </div>
@@ -310,7 +312,7 @@
                 <div class="row">
                     <div class="col-lg-12 col-sm-12 col-xs-12">
                         <h2>We have taken the inititative to help the students in case of any emergency.</h2>
-                        <a class="btn btn-theme btn-theme-invert margin-top-24 wow bounceIn" href="#">BECOME VOLUNTEER</a>
+                        <a class="btn btn-theme btn-theme-invert margin-top-24 wow bounceIn" href="login.php">BECOME VOLUNTEER</a>
                     </div> <!--  end .col-md-8  -->
                 </div> <!--  end .row  -->
             </div>
@@ -398,35 +400,35 @@
                                     <ul class="footer-useful-links">
 
                                         <li>
-                                            <a href="index.html">
+                                            <a href="index.php">
                                                 <i class="fa fa-caret-right fa-footer"></i>
                                                 Home
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="about-us.html">
+                                            <a href="about-us.php">
                                                 <i class="fa fa-caret-right fa-footer"></i>
                                                 About Us
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="services.html">
+                                            <a href="services.php">
                                                 <i class="fa fa-caret-right fa-footer"></i>
                                                 Services
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="faq.html">
+                                            <a href="faq.php">
                                                 <i class="fa fa-caret-right fa-footer"></i>
                                                 Frequently Asked Questions
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="contact.html">
+                                            <a href="contact.php">
                                                 <i class="fa fa-caret-right fa-footer"></i>
                                                 Contact Us
                                             </a>

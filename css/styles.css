@@ -25,6 +25,7 @@
 /*      12. FOOTER
 /*      13. SIDEBAR & WIDGETS
 /*      14. RESPONSIVE STYLING
+/*      15. REGISTRATION PAGE
 /*
 /*========================================================================*/
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Poppins:300,400');
@@ -728,6 +729,19 @@ a.btn-load-more:hover {
 .sticky {
   margin-bottom: 21px;
   background: #FFFFFF;
+}
+
+.map_canvas {
+  height: 400px;
+  width: 100%;
+  position: relative;
+}
+
+.map_div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  
 }
 /*------------------------------ Gallery Caption  ---------------------------------*/
 /*------------------------------ By Post Author ---------------------------------*/
@@ -6357,6 +6371,10 @@ span.border-bold-dashed {
     height: auto;
     text-align: center;
     }
+
+    .signup-form form .form-group .row div{
+      margin-bottom: 20px;
+    }
 }
 /* Tab Portrait Size to Tab Landscape Size (devices and browsers) */
 @media only screen and (min-width: 380px) and (max-width: 480px) {
@@ -6377,5 +6395,97 @@ span.border-bold-dashed {
     margin-right: 120px;
   }
 } */
+}
+/***********************************************************************************************/
+/* 15. REGISTRATION FORM */
+/***********************************************************************************************/
+.form-control{
+  height: 40px;
+  box-shadow: none;
+  color: #969fa4;
+}
+.form-control:focus{
+  border-color: #5cb85c;
+}
+  .form-control, .btn{        
+      border-radius: 3px;
+  }
 
-/*# sourceMappingURL=styles.css.map */
+.signup-form-wrapper{
+   width: 100%; 
+   padding: 20px;
+   text-align: center;
+   }
+
+.signup-form{
+  /* width: 400px; */
+  margin: 0 auto;
+  padding: 30px 0;
+  display: inline-block;
+}
+.signup-form h2{
+  color: #636363;
+      margin: 0 0 15px;
+  position: relative;
+  text-align: center;
+  }
+.signup-form h2:before, .signup-form h2:after{
+  /* content: ""; */
+  height: 2px;
+  width: 30%;
+  background: #d4d4d4;
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+}	
+.signup-form h2:before{
+  left: 0;
+}
+.signup-form h2:after{
+  right: 0;
+}
+  .signup-form .hint-text{
+  color: #999;
+  margin-bottom: 30px;
+  text-align: center;
+}
+  .signup-form form{
+  color: #999;
+  border-radius: 3px;
+    margin-bottom: 15px;
+      background: #f2f3f7;
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+      padding: 30px;
+  }
+.signup-form .form-group{
+  margin-bottom: 20px;
+}
+.signup-form input[type="checkbox"]{
+  margin-top: 3px;
+}
+.signup-form .btn{        
+      font-size: 16px;
+      font-weight: bold;		
+  min-width: 140px;
+      outline: none !important;
+  }
+.signup-form .row div:first-child{
+  padding-right: 10px;
+}
+.signup-form .row div:last-child{
+  padding-left: 10px;
+}    	
+  .signup-form a{
+  color: rgb(255, 13, 13);
+  text-decoration: underline;
+}
+  .signup-form a:hover{
+  text-decoration: none;
+}
+.signup-form form a{
+  color: #5cb85c;
+  text-decoration: none;
+}	
+.signup-form form a:hover{
+  text-decoration: underline;
+/*# sourceMappingURL=styles.css.map *}

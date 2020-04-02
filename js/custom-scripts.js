@@ -1081,21 +1081,27 @@ jQuery(function ($) {
 
     // GOOGLE MAP FOR CONTACT & EVENT PAGE.
 
-    if ($('#map_canvas').length) {
+    // if ($('#map_canvas').length) {
 
-        var map;
+    //     //var map;
 
-        $('#map_canvas').css({
-            'height': '400px'
-        });
+    //     $('#map_canvas').css({
+    //         'height': '400px'
+    //     });
 
-        map = new GMaps({
-            div: '#map_canvas',
-            lat: -31.2585243,
-            lng: -75.7043354,
-        });
+    //     // map = new GMaps({
+    //     //     div: '#map_canvas',
+    //     //     lat: 31.2585243,
+    //     //     lng: 75.7043354,
+    //     // }).addMarker({
+    //     //     lat: 31.2585243,
+    //     //     lng: 75.7043354,
+    //     //     title: "Map",
+    //     //     infoWindow: {
+    //     //     content:'LBS, Block 3, UniHospital, LPU'
+    //     // }});
 
-    }
+    // }
     
     // CONTACT FORM 
     
@@ -1287,3 +1293,4 @@ jQuery(function ($) {
     });
 
 });
+

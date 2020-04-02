@@ -1,10 +1,20 @@
-<!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<?php
+require_once "config.php";
 
-    
-<!-- Mirrored from templates.bwlthemes.com/blood_donation/v_2/element-service.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Mar 2020 17:57:33 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=iso-8859-1" /><!-- /Added by HTTrack -->
+session_start();
+$username=$_SESSION['username'];
+$sql2="SELECT * FROM users WHERE username = '$username'";
+$query=mysqli_query($link,$sql2);
+$row = mysqli_fetch_array($query);
+
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: services.php");
+    exit;
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
 <head>
         <meta charset="utf-8">
         <title>Element Services - Reddrop Buddies - Blood Donation Campaign & Multi-Concept Activism Template</title>
@@ -12,11 +22,6 @@
         <meta name="description" content="Reddrop Buddies - Blood Donation Campaign & Multi-Concept Activism Template">
         <meta name="author" content="xenioushk">
         <link rel="shortcut icon" href="images/favicon.png" />
-
-        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
 
         <!-- The styles -->
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -49,25 +54,26 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="logo" href="index.html"><img alt="" src="images/logo.png"></a>
+                            <a class="logo" href="index.php"><img alt="" src="images/logo.png"></a>
                         </div>
 
                         <div class="navbar-collapse collapse">
                             <ul class="nav navbar-nav navbar-right">
                                 <li>
-                                    <a href="index.html" title="Home">Home</a>
+                                    <a href="index.php" title="Home">Home</a>
                                 </li>
                                 
-                                <li><a href="about-us.html" title="About Us">About Us</a></li>
+                                <li><a href="about-us.php" title="About Us">About Us</a></li>
 
                                 <li>
                                     <a href="#" title="Services">Services</a>
                                 </li>
 
-                                <li><a href="contact.html" title="Contact">Contact</a></li>
+                                <li><a href="contact.php" title="Contact">Contact</a></li>
+                                <li><a>Welcome&nbsp;<?php echo ($row["FNAME"]." ".$row["LNAME"]); ?></a></li>
 
                                 <li>
-                                    <a class="login-btn" href="#">Login/Sign Up</a>
+                                <a class="login-btn" href="logout.php">Logout</a>
                                 </li>
                             </ul>
                         </div>
@@ -379,35 +385,35 @@
                                     <ul class="footer-useful-links">
 
                                         <li>
-                                            <a href="index.html">
+                                            <a href="index.php">
                                                 <i class="fa fa-caret-right fa-footer"></i>
                                                 Home
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="about-us.html">
+                                            <a href="about-us.php">
                                                 <i class="fa fa-caret-right fa-footer"></i>
                                                 About Us
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="services.html">
+                                            <a href="services.php">
                                                 <i class="fa fa-caret-right fa-footer"></i>
                                                 Services
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="faq.html">
+                                            <a href="faq.php">
                                                 <i class="fa fa-caret-right fa-footer"></i>
                                                 Frequently Asked Questions
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="contact.html">
+                                            <a href="contact.php">
                                                 <i class="fa fa-caret-right fa-footer"></i>
                                                 Contact Us
                                             </a>
@@ -469,5 +475,5 @@
     </body>
 
 
-<!-- Mirrored from templates.bwlthemes.com/blood_donation/v_2/element-service.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Mar 2020 17:57:33 GMT -->
+<!-- Mirrored from templates.bwlthemes.com/blood_donation/v_2/element-service.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Mar 2020 17:57:33 GMT -->
 </html>
