@@ -26,6 +26,7 @@
 /*      13. SIDEBAR & WIDGETS
 /*      14. RESPONSIVE STYLING
 /*      15. REGISTRATION PAGE
+/*      16. USER DETAIL PAGE
 /*
 /*========================================================================*/
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Poppins:300,400');
@@ -156,6 +157,7 @@ dfn[title] {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+  border-radius: 10px;
 }
 hr {
   display: block;
@@ -6488,4 +6490,51 @@ span.border-bold-dashed {
 }	
 .signup-form form a:hover{
   text-decoration: underline;
+}
+
+
+
+/***********************************************************************************************/
+/* 16. USER DETAIL PAGE */
+/***********************************************************************************************/
+
+
+.table-user {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  /* table-layout: fixed; */
+}
+.table-user * {
+  position: relative;
+}
+.table-user td, .table-user th {
+  padding-left: 8px;
+}
+.table-user thead tr {
+  height: 60px;
+  background: #36304a;
+}
+.table-user tbody tr {
+  height: 50px;
+}
+
+.table-user th{
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+  font-weight: unset;
+}
+.table-user td, .table-user th {
+  text-align: center;
+}
+
+
+
+
 /*# sourceMappingURL=styles.css.map *}

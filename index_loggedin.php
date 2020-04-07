@@ -54,7 +54,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="logo" href="index.html"><img alt="" src="images/logo.png"></a>
+                            <a class="logo" href="index.php"><img alt="" src="images/logo.png"></a>
                         </div>
 
                         <div class="navbar-collapse collapse">
@@ -99,6 +99,16 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                             <h3>Blood is the most precious gift that anyone can give to another person.<br>
                                 Donating blood not only saves the life also save donor's lives.
                             </h3>
+                            <a href="users_list.php" class="btn btn-theme margin-top-32">All Donor Details</a>
+                            <a href="request_blood.php" class="btn btn-theme margin-top-32">Request Blood</a>
+                            <a href="userlistbybg.php" class="btn btn-theme margin-top-32">Search Donor by Blood Group</a>
+                            <a href="userlistbyrno.php" class="btn btn-theme margin-top-32">Search Donor by Registration Number</a>
+                            <a href="recorddonation.php" class="btn btn-theme margin-top-32">Record Blood Donation</a>
+                            <a href="alldonationhistory.php" class="btn btn-theme margin-top-32">View All Donation History</a>
+                            <a href="userdonationhistory.php" class="btn btn-theme margin-top-32">View Your Donation History</a>
+
+
+
                         </div>
                     </div> <!-- end .col-md-12  -->
                 </div>
@@ -405,7 +415,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                                     <ul class="footer-useful-links">
 
                                         <li>
-                                            <a href="index.html">
+                                            <a href="index.php">
                                                 <i class="fa fa-caret-right fa-footer"></i>
                                                 Home
                                             </a>
@@ -426,7 +436,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                                         </li>
 
                                         <li>
-                                            <a href="faq.html">
+                                            <a href="faq.php">
                                                 <i class="fa fa-caret-right fa-footer"></i>
                                                 Frequently Asked Questions
                                             </a>

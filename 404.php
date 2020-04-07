@@ -1,10 +1,6 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
-
-    
-<!-- Mirrored from templates.bwlthemes.com/blood_donation/v_2/404.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Mar 2020 17:57:34 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=iso-8859-1" /><!-- /Added by HTTrack -->
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
 <head>
         <meta charset="utf-8">
         <title>404 - Reddrop Buddies - Blood Donation Campaign & Multi-Concept Activism Template</title>
@@ -13,11 +9,7 @@
         <meta name="author" content="xenioushk">
         <link rel="shortcut icon" href="images/favicon.png" />
 
-        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-
+        
         <!-- The styles -->
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" >
@@ -36,124 +28,42 @@
 
         <header class="main-header clearfix" data-sticky_header="true">
 
-            <div class="top-bar clearfix">
+        
+        <section class="header-wrapper navgiation-wrapper">
 
-                <div class="container">
+<div class="navbar navbar-default">			
+    <div class="container">
 
-                    <div class="row">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="logo" href="index.php"><img alt="" src="images/logo.png"></a>
+        </div>
 
-                        <div class="col-md-8 col-sm-12">
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="index.php" title="Home">Home</a>
+                </li>
+                
+                <li><a href="about-us.php" title="About Us">About Us</a></li>
 
-                            <p>
-                                <span><i class="fa fa-building-o"></i> <strong>Contact: </strong>  East Shibgonj, Sylhet, 3100</span>
-                                <span>&nbsp;<i class="fa fa-phone"></i> <strong>Call Us:</strong> +880-1891-82709</span>
-                            </p>
+                <li>
+                    <a href="services.php" title="Services">Services</a>
+                </li>
 
-                        </div>
+                <li><a href="contact.php" title="Contact">Contact</a></li>
 
-                        <div class="col-md-4col-sm-12">
-                            <div class="top-bar-social">
-                                <a href="#"><i class="fa fa-facebook rounded-box"></i></a>
-                                <a href="#"><i class="fa fa-twitter rounded-box"></i></a>
-                                <a href="#"><i class="fa fa-google-plus rounded-box"></i></a>
-                                <a href="#"><i class="fa fa-instagram rounded-box"></i></a>
-                                <a href="#"><i class="fa fa-youtube rounded-box"></i></a>
-                            </div>   
-                        </div> 
+                
+            </ul>
+        </div>
+    </div>
+</div>
 
-                    </div>
-
-                </div> <!--  end .container -->
-
-            </div> <!--  end .top-bar  -->
-
-            <section class="header-wrapper navgiation-wrapper">
-
-                <div class="navbar navbar-default">			
-                    <div class="container">
-
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <a class="logo" href="index-2.html"><img alt="" src="images/logo.png"></a>
-                        </div>
-
-                        <div class="navbar-collapse collapse">
-                            <ul class="nav navbar-nav navbar-right">
-                                
-                                <li>
-                                    <a href="#">Home</a>
-                                    <ul class="drop-down">
-                                        <li><a href="index-2.html" title="Home Layout 01">Home 01</a></li>
-                                        <li><a href="home-2.html" title="Home Layout 02">Home 02</a></li>
-                                    </ul>
-                                </li>
-
-                                
-                                <li><a href="about-us.html" title="About Us">About Us</a></li>
-
-                                <li>
-                                    <a href="#">Campaign</a>
-                                    <ul class="drop-down">
-                                        <li><a href="events.html">All Campaigns</a></li>
-                                        <li><a href="event-single.html">Single Campaign</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="drop"><a href="#">Pages</a>
-                                    <ul class="drop-down">
-                                        
-                                        <li class="drop"><a href="#">Elements</a>
-                                            <ul class="drop-down level3">
-                                                <li><a href="element-cta.html">CTA/PROMO BOX</a></li>
-                                                <li><a href="element-counter.html">Fun Facts</a></li>
-                                                <li><a href="element-logos.html">Logos/Clients</a></li>
-                                                <li><a href="element-process.html">Process</a></li>
-                                                <li><a href="element-highlights.html">Highlights Box</a></li>
-                                                <li><a href="element-service.html">Services</a></li>
-                                                <li><a href="element-subscribe.html">Subscribe</a></li>
-                                                <li><a href="element-team.html">Team</a></li>
-                                                <li><a href="element-feedback.html">Testimonials</a></li>
-                                            </ul>
-                                        </li>
-                                       
-                                        <li class="drop"><a href="#">Gallery</a>
-                                            <ul class="drop-down level3">
-                                                <li><a href="gallery-1.html">Layout 01</a></li> 
-                                                <li><a href="gallery-2.html">Layout 02</a></li> 
-
-                                            </ul>
-                                        </li>
-                                         <li><a href="faq.html" title="FAQ">FAQ</a></li>
-                                        <li><a href="404.html" title="404 Page">404 Page</a></li> 
-                                        <li class="drop"><a href="#">Level 3</a>
-                                            <ul class="drop-down level3">
-                                                <li><a href="#">Level 3.1</a></li>
-                                                <li><a href="#">Level 3.2</a></li>
-                                                <li><a href="#">Level 3.3</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li>
-                                    <a href="#">Blog</a>
-                                    <ul class="drop-down">
-                                        <li><a href="blog.html">All Posts</a></li> 
-                                        <li><a href="single.html">Single Page</a></li>
-                                    </ul>
-                                </li>
-
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-            </section>
+</section>
 
         </header> <!-- end main-header  -->
 
@@ -173,7 +83,7 @@
                         </h3>
 
                         <p class="page-breadcrumb">
-                            <i class="fa fa-angle-double-left"></i> <a href="#">Back To Home</a>
+                            <i class="fa fa-angle-double-left"></i> <a href="index.php">Back To Home</a>
                         </p>
 
 

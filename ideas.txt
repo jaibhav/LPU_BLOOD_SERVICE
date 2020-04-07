@@ -1,0 +1,11 @@
+user can create a request to admin for blood request with reason. admin will change status to granted or rejected and will submit the request.
+user can view their donation history.
+user can change their password after login
+user can reset forgotten password.
+
+admin will get a form to store record of blood donation. and can view it also.
+admin can view donation history of all donors
+
+admin can search donorby email or registration number// done
+
+admin can view all students by blood group.// done

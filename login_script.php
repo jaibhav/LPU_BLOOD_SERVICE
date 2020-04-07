@@ -58,11 +58,16 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                         if(password_verify($password, $hashed_password)){
                             // Password is correct, so start a new session
                             session_start();
-                                                        
+                            
+                            $sql2="SELECT * FROM users WHERE username = '$username'";
+                            $query=mysqli_query($link,$sql2);
+                            $row = mysqli_fetch_array($query);
+                            
                             // Store data in session variables
                             $_SESSION["loggedin"] = true;
                             $_SESSION["id"] = $id;
-                            $_SESSION["username"] = $username;  
+                            $_SESSION["username"] = $username;
+                            $_SESSION["utype"]= $row["user_type"];  
                             
                             // Redirect user to welcome page
                             header("location: index_loggedin.php");

@@ -12,3 +12,15 @@ CREATE TABLE users (
 
 //to reset auto AUTO_INCREMENT
 ALTER TABLE users AUTO_INCREMENT = 1
+
+1
+2
+3
+4
+5
+	
+CREATE TABLE `password_reset_temp` (
+  `email` varchar(250) NOT NULL,
+  `key` varchar(250) NOT NULL,
+  `expDate` datetime NOT NULL
+)
