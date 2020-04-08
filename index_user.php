@@ -11,8 +11,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: index.php");
     exit;
 }
-if($_SESSION["utype"] !=='A'){
-    header("location: index_user.php");
+if($_SESSION["utype"] !=='U'){
+    header("location: 404.php");
     exit;
 }
 ?>
@@ -105,12 +105,7 @@ if($_SESSION["utype"] !=='A'){
                             <h3>Blood is the most precious gift that anyone can give to another person.<br>
                                 Donating blood not only saves the life also save donor's lives.
                             </h3>
-                            <a href="users_list.php" class="btn btn-theme margin-top-32">All Donor Details</a>
-                            <a href="request_blood.php" class="btn btn-theme margin-top-32">Request Blood</a>
-                            <a href="userlistbybg.php" class="btn btn-theme margin-top-32">Search Donor by Blood Group</a>
-                            <a href="userlistbyrno.php" class="btn btn-theme margin-top-32">Search Donor by Registration Number</a>
-                            <a href="recorddonation.php" class="btn btn-theme margin-top-32">Record Blood Donation</a>
-                            <a href="alldonationhistory.php" class="btn btn-theme margin-top-32">View All Donation History</a>
+                            
                             <a href="userdonationhistory.php" class="btn btn-theme margin-top-32">View Your Donation History</a>
 
 

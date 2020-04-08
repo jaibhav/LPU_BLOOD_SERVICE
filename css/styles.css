@@ -896,7 +896,7 @@ a.logo img {
   padding-bottom: 24px;
 }
 .navbar-default .navbar-nav > li > a:hover {
-  color: #000000;
+  color: #f1534a;
 }
 .navbar-default .navbar-nav li.drop {
   position: relative;
@@ -947,13 +947,12 @@ a.logo img {
   color: #000000;
   padding: 12px 20px;
   text-transform: uppercase;
-  background: rgba(255, 255, 255, 0.9);
+  /* background: rgba(255, 255, 255, 0.9); */
   margin: 0;
   border: none;
 }
 .navbar-default .navbar-nav li ul.drop-down li a:hover {
-  background: rgba(0, 0, 0, 0.9);
-  color: #FFFFFF;
+  color: #f1534a;
 }
 .navbar-default .navbar-nav li ul.drop-down li:hover ul.drop-down.level3 {
   -webkit-transform: rotateX(0deg);

@@ -70,10 +70,11 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                                 </li>
 
                                 <li><a href="contact.php" title="Contact">Contact</a></li>
-                                <li><a>Welcome&nbsp;<?php echo ($row["FNAME"]." ".$row["LNAME"]); ?></a></li>
-
-                                <li>
-                                <a class="login-btn" href="logout.php">Logout</a>
+                                <li><a>Welcome&nbsp;<?php echo ($row["FNAME"]." ".$row["LNAME"]); ?></a>
+                                    <ul class="drop-down">
+                                        <li><a class="login-btn" href="password_change.php">Change Password</a></li>
+                                        <li><a class="login-btn" href="logout.php">Logout</a></li>
+                                    </ul>
                                 </li>
                             </ul>
                         </div>

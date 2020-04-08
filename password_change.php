@@ -2,74 +2,18 @@
     require_once "config.php";
 
     session_start();
+    include "password_change_script.php";
+
     $username=$_SESSION['username'];
     $sql2="SELECT * FROM users WHERE username = '$username'";
     $query=mysqli_query($link,$sql2);
     $row = mysqli_fetch_array($query);
-    
-
-    
 
     if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         header("location: login.php");
         exit;
     }
-    if($_SESSION["utype"] !=='A'){
-        header("location: 404.php");
-        exit;
-    }
 ?>
-
-<?php
-    $row_data='';
-    $table_data='';
-    if($_SERVER["REQUEST_METHOD"] == "POST"){
-        $bgrp=trim($_POST["bgrp"]);
-    $sql_users="SELECT * FROM users where bgrp='$bgrp' ";
-    $user_query=mysqli_query($link,$sql_users);
-    if (mysqli_num_rows($user_query) == 0)
-                //error here
-             {
-                 echo '<script>alert("No Donor Found"); window.location="userlistbybg.php"</script>';
-                // exit;
-
-
-
-                }
-                else{
-                    while($rows=mysqli_fetch_array($user_query))
-                    {
-                        $row_data .= '<tr>
-                         <td>'.$rows['FNAME'].'</td>
-                         <td>'.$rows['LNAME'].'</td>
-                         <td>'.$rows['username'].'</td>
-                         <td>'.$rows['regno'].'</td>
-                         <td>'.$rows['mobno'].'</td>
-                         <td>'.$rows['bgrp'].'</td>
-                         </tr>';
-                    }
-                    
-                    $table_data='<table class="table table-striped table-user">
-                    <thead>
-                        <tr>
-                            <th>FIRST NAME</th>
-                            <th>LAST NAME</th>
-                            <th>EMAIL</th>
-                            <th>REGISTRATION NUMBER</th>
-                            <th>MOBILE NUMBER</th>
-                            <th>BLOOD GROUP</th>
-
-
-
-                        </tr>
-                        
-                    </thead>
-                    <tbody>'.$row_data.'</tbody>
-                </table>';
-                }
-   
-    }
-    ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -78,7 +22,7 @@
 <meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
 <head>
         <meta charset="utf-8">
-        <title>Users</title>
+        <title>Change Password</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta name="description" content="Portal for finding blood donors in LPU">
         <meta name="author" content="LPU">
@@ -161,7 +105,7 @@
 
 
                         <h3>
-                            User Details
+                            Change Password
                         </h3>
 
                         <p class="page-breadcrumb">
@@ -186,23 +130,21 @@
                     <div class="signup-form">
 
                         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-                            <h2>Search by BG</h2>
+                            <h2>Change Password</h2>
                             
-                            
-                            <div class="form-group">
-                            <label>Select Blood Group</label>
-                                <select class="form-control" name="bgrp" required>
-                                    <option value="" disabled selected hidden>Select your blood group</option>    
-                                    <option value="A+">A+</option>
-                                    <option value="A-">A-</option>
-                                    <option value="B+">B+</option>
-                                    <option value="B-">B-</option>
-                                    <option value="O+">O+</option>
-                                    <option value="O-">O-</option>
-                                    <option value="AB+">AB+</option>
-                                    <option value="AB-">AB-</option>
-                                </select>
+                            <div class="form-group ">
+                                <label>Enter Current Password</label>
+                                <input type="password" class="form-control" name="password" placeholder="Current Password" required="required" value="<?php echo $password; ?>">
                             </div>
+                            <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+                                <label>Enter New Password</label>
+                                <input type="password" class="form-control" name="new_password" placeholder="New Password" required="required" value="<?php echo $new_password; ?>">
+                            </div>
+                            <div class="form-group <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
+                                <label>Confirm New Password</label>
+                                <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required" value="<?php echo $confirm_password; ?>">
+                            </div> 
+
                             <div class="form-group">
                                 <button type="submit" class="btn btn-success btn-lg btn-block">Submit</button>
                             </div>
@@ -221,17 +163,7 @@
             <div class="container">
 
                 <div class="row">
-                    
-                <!-- <div class="col-lg-1 col-md-1 col-sm-0"></div>
-                <div class="col-lg-8 col-md-8 col-sm-12"> -->
-                
-                <!-- </div>
-                <div class="col-lg-2 col-md-2 col-sm-0"></div> -->
-
-                <?php
-                    echo $table_data;
-                ?>
-
+        
                 </div>   
 
             </div>

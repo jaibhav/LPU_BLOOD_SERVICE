@@ -25,12 +25,12 @@
     $table_data='';
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         $rno=trim($_POST["regno"]);
-    $sql_users="SELECT * FROM users where rno='$rno' ";
+    $sql_users="SELECT * FROM users where regno='$rno' ";
     $user_query=mysqli_query($link,$sql_users);
     if (mysqli_num_rows($user_query) == 0)
                 //error here
              {
-                 echo '<script>alert("No Donor Found"); window.location="userlistbybg.php"</script>';
+                 echo '<script>alert("No Donor Found"); window.location="userlistbyrno.php"</script>';
                 // exit;
 
 
@@ -134,9 +134,11 @@
                                 </li>
 
                                 <li><a href="#" title="Contact">Contact</a></li>
-                                <li><a>Welcome&nbsp;<?php echo ($row["FNAME"]." ".$row["LNAME"]); ?></a></li>
-                                <li>
-                                    <a class="login-btn" href="logout.php">Logout</a>
+                                <li><a>Welcome&nbsp;<?php echo ($row["FNAME"]." ".$row["LNAME"]); ?></a>
+                                    <ul class="drop-down">
+                                        <li><a class="login-btn" href="password_change.php">Change Password</a></li>
+                                        <li><a class="login-btn" href="logout.php">Logout</a></li>
+                                    </ul>
                                 </li>
                             </ul>
                         </div>

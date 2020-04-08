@@ -15,9 +15,6 @@ require 'D:\SOFTWARES\xampp\htdocs\blood_service\phpmailer/PHPMailer.php';
 require 'D:\SOFTWARES\xampp\htdocs\blood_service\phpmailer/SMTP.php';
 require 'D:\SOFTWARES\xampp\htdocs\blood_service\phpmailer/Exception.php';
 
-$test='';
-$test='success';
-
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     $bgrp=trim($_POST["bgrp"]);
