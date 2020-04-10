@@ -17,6 +17,10 @@
         header("location: login.php");
         exit;
     }
+    if($_SESSION["utype"] !=='U'){
+        header("location: 404.php");
+        exit;
+    }
     
 ?>
 
@@ -108,10 +112,6 @@
                             Your Donation History
                         </h3>
 
-                        <p class="page-breadcrumb">
-                            <a href="#">Home</a> / Contact
-                        </p>
-
 
                     </div>
 
@@ -125,7 +125,7 @@
 
         <section class="section-content-block">
 
-            <div class="container">
+            <div class="container table-responsive">
 
                 <div class="row">
                     

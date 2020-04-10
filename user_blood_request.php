@@ -1,29 +1,56 @@
-<?php include 'register_script.php' ?>
 <?php
-session_start();
- 
-if(isset($_SESSION["loggedin"])){
-    header("location: index_loggedin.php");
-    exit;
-}
+    require_once "config.php";
+
+    session_start();
+    $username=$_SESSION['username'];
+    $sql="SELECT * FROM users WHERE username = '$username'";
+    $query=mysqli_query($link,$sql);
+    $row = mysqli_fetch_array($query);
+    if($_SERVER["REQUEST_METHOD"] == "POST"){
+        $rno=$row["regno"];
+        $bg=$_POST["bgrp"];
+        $rsn=$_POST["reason"];
+        $sql2="INSERT INTO userbloodrequest (regno,bgrp_req,reason) VALUES ('$rno','$bg','$rsn')";
+        if(mysqli_query($link,$sql2)){
+            echo '<script>alert("Request Submitted Successfully"); window.location="user_blood_request.php"</script>';
+        }
+        else{
+            echo '<script>alert("Unable to Submit Request"); window.location="user_blood_request.php"</script>';
+        }
+
+    }
+
+    
+    if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+        header("location: login.php");
+        exit;
+    }
+    if($_SESSION["utype"] !=='U'){
+        header("location: 404.php");
+        exit;
+    }
 ?>
+
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 
     
 <meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
 <head>
         <meta charset="utf-8">
-        <title>Register</title>
+        <title>Blood Request</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta name="description" content="Portal for finding blood donors in LPU">
         <meta name="author" content="LPU">
         <link rel="shortcut icon" href="images/favicon.png" />
 
+       
+
         <!-- The styles -->
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" >
         <link href="css/animate.css" rel="stylesheet" type="text/css" >
+        <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" >
         <link href="css/venobox.css" rel="stylesheet" type="text/css" >
         <link rel="stylesheet" href="css/styles.css" />
 
@@ -63,10 +90,12 @@ if(isset($_SESSION["loggedin"])){
                                     <a href="services.php" title="Services">Services</a>
                                 </li>
 
-                                <li><a href="contact.php" title="Contact">Contact</a></li>
-
-                                <li>
-                                    <a class="login-btn" href="login.php">Login/Sign Up</a>
+                                <li><a href="#" title="Contact">Contact</a></li>
+                                <li><a>Welcome&nbsp;<?php echo ($row["FNAME"]." ".$row["LNAME"]); ?></a>
+                                    <ul class="drop-down">
+                                        <li><a class="login-btn" href="password_change.php">Change Password</a></li>
+                                        <li><a class="login-btn" href="logout.php">Logout</a></li>
+                                    </ul>
                                 </li>
                             </ul>
                         </div>
@@ -86,12 +115,11 @@ if(isset($_SESSION["loggedin"])){
                 <div class="row">
 
                     <div class="col-sm-12 text-center">
-
+        
 
                         <h3>
-                            Register    
+                            Blood Request
                         </h3>
-
 
                     </div>
 
@@ -105,40 +133,17 @@ if(isset($_SESSION["loggedin"])){
 
         <section class="section-content-block">
 
-        
             <div class="container">
                 <div class="signup-form-wrapper">
 
                     <div class="signup-form">
 
                         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-                            <h2>Register</h2>
-                            <p class="hint-text">Create your account. It's free and only takes a minute.</p>
+                            <h2>Request Blood</h2>
+                            
+                            
                             <div class="form-group">
-                            <input type="text" class="form-control" name="first_name" placeholder="First Name" required="required">    
-                                <!-- <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-12"><input class="form-control" type="text" class="form-control" name="first_name" placeholder="First Name" required="required"></div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12"><input class="form-control" type="text" class="form-control" name="last_name" placeholder="Last Name" required="required"></div>
-                                </div>        	 -->
-                            </div><div class="form-group">
-                                 <input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required">  	
-                            </div>
-                            <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
-                                <input type="email" class="form-control" name="username" placeholder="Email" required="required" value="<?php echo $username; ?>">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="regno" placeholder="Registration Number" required="required">
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" class="form-control" name="mobno" placeholder="Contact Number" required="required">
-                            </div>
-                            <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
-                                <input type="password" class="form-control" name="password" placeholder="Password" required="required" value="<?php echo $password; ?>">
-                            </div>
-                            <div class="form-group <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
-                                <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required" value="<?php echo $confirm_password; ?>">
-                            </div>    
-                            <div class="form-group">
+                            <label>Select Blood Group</label>
                                 <select class="form-control" name="bgrp" required>
                                     <option value="" disabled selected hidden>Select your blood group</option>    
                                     <option value="A+">A+</option>
@@ -150,16 +155,17 @@ if(isset($_SESSION["loggedin"])){
                                     <option value="AB+">AB+</option>
                                     <option value="AB-">AB-</option>
                                 </select>
-                            </div>    
-                            <div class="form-group">
-                                <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="btn btn-success btn-lg btn-block">Register Now</button>
+                                <label>Enter Reason</label>
+                                <textarea class="form-control" name="reason" rows="4" cols="20" maxlength="255" placeholder="Enter Reason Here"  required  style="vertical-align: middle;"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-success btn-lg btn-block">Submit Request</button>
                             </div>
                              
                         </form>
-                        <div class="text-center">Already have an account? <a href="login.php">Sign in</a></div>
+                        
            
 
             
@@ -168,17 +174,12 @@ if(isset($_SESSION["loggedin"])){
 
                 </div> <!-- end .row  -->
             </div>
-            
-       
 
         </section>
 
         <section class="section-content-block section-secondary-bg">
 
-            <div class="container">
-
-                
-            </div> <!--  end .container -->
+            
 
         </section> <!-- end .section-content-block  -->
 
@@ -346,6 +347,7 @@ if(isset($_SESSION["loggedin"])){
         <script src="js/jquery.backTop.min.js"></script>
         <script src="js/waypoints.min.js"></script>
         <script src="js/waypoints-sticky.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
         <script src="js/jquery.stellar.min.js"></script>
         <script src="js/jquery.counterup.min.js"></script>
         <script src="js/venobox.min.js"></script>

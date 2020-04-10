@@ -108,11 +108,6 @@
                             Change Password
                         </h3>
 
-                        <p class="page-breadcrumb">
-                            <a href="#">Home</a> / Contact
-                        </p>
-
-
                     </div>
 
                 </div> <!-- end .row  -->
@@ -139,10 +134,14 @@
                             <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
                                 <label>Enter New Password</label>
                                 <input type="password" class="form-control" name="new_password" placeholder="New Password" required="required" value="<?php echo $new_password; ?>">
+                                <span class="help-block"><?php echo $new_password_err; ?></span>
+
                             </div>
                             <div class="form-group <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
                                 <label>Confirm New Password</label>
                                 <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required" value="<?php echo $confirm_password; ?>">
+                                <span class="help-block"><?php echo $confirm_password_err; ?></span>
+
                             </div> 
 
                             <div class="form-group">

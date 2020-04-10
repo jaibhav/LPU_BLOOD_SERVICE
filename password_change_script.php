@@ -28,9 +28,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
             // Validate new password
             if(empty(trim($_POST["new_password"]))){
-                $password_err = "Please enter a password.";     
+                $new_password_err = "Please enter a password.";     
             } elseif(strlen(trim($_POST["new_password"])) < 6){
-                $password_err = "Password must have atleast 6 characters.";
+                $new_password_err = "Password must have atleast 6 characters.";
             } else{
                 $new_password = trim($_POST["new_password"]);
             }
@@ -40,13 +40,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 $confirm_password_err = "Please confirm password.";     
             } else{
                 $confirm_password = trim($_POST["confirm_password"]);
-                if(empty($password_err) && ($new_password != $confirm_password)){
+                if(empty($new_password_err) && ($new_password != $confirm_password)){
                     $confirm_password_err = "Password did not match.";
                 }
             }
             
             // Check input errors before inserting in database
-            if(empty($password_err) && empty($confirm_password_err)){
+            if(empty($new_password_err) && empty($confirm_password_err)){
 
                 $param_password = password_hash($new_password, PASSWORD_DEFAULT);
                 // Prepare an insert statement

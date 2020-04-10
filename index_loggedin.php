@@ -111,7 +111,8 @@ if($_SESSION["utype"] !=='A'){
                             <a href="userlistbyrno.php" class="btn btn-theme margin-top-32">Search Donor by Registration Number</a>
                             <a href="recorddonation.php" class="btn btn-theme margin-top-32">Record Blood Donation</a>
                             <a href="alldonationhistory.php" class="btn btn-theme margin-top-32">View All Donation History</a>
-                            <a href="userdonationhistory.php" class="btn btn-theme margin-top-32">View Your Donation History</a>
+                            <a href="users_request_view.php" class="btn btn-theme margin-top-32">View User Requests</a>
+
 
 
 

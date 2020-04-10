@@ -82,10 +82,6 @@
                             404 Page
                         </h3>
 
-                        <p class="page-breadcrumb">
-                            <i class="fa fa-angle-double-left"></i> <a href="index.php">Back To Home</a>
-                        </p>
-
 
                     </div>
 

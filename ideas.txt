@@ -1,6 +1,6 @@
-user can create a request to admin for blood request with reason. admin will change status to granted or rejected and will submit the request.
-user can view their donation history.//
-user can change their password after login
+user can create a request to admin for blood request with reason. admin will change status to granted or rejected and will submit the request. User can view status of request.// DONE
+user can view their donation history.// done
+user can change their password after login// done
 user can reset forgotten password.
 
 admin will get a form to store record of blood donation. and can view it also.// done

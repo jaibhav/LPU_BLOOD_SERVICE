@@ -1,29 +1,58 @@
-<?php include 'register_script.php' ?>
 <?php
-session_start();
- 
-if(isset($_SESSION["loggedin"])){
-    header("location: index_loggedin.php");
-    exit;
-}
+    require_once "config.php";
+
+    session_start();
+    $username=$_SESSION['username'];
+    $sql2="SELECT * FROM users WHERE username = '$username'";
+
+    $query=mysqli_query($link,$sql2);
+    $row = mysqli_fetch_array($query);
+    
+    $sql_users="SELECT FNAME,LNAME,users.regno,mobno,bgrp_req,reason,req_status,userbloodrequest.created_at,userbloodrequest.id FROM users JOIN userbloodrequest ON users.regno = userbloodrequest.regno";
+    //echo $_SESSION["utype"];
+    $user_query=mysqli_query($link,$sql_users);
+
+    if($_SERVER["REQUEST_METHOD"] == "POST"){
+        $new_stat=$_POST['status'];
+        $up_id=$_POST['id'];
+        $sql_change = "UPDATE userbloodrequest SET req_status = '$new_stat' WHERE userbloodrequest.id = '$up_id'";
+        if(mysqli_query($link,$sql_change)){
+            echo '<script>alert("Updated Successfully"); window.location="users_request_view.php"</script>';
+        }
+    }
+    if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+        header("location: login.php");
+        exit;
+    }
+    if($_SESSION["utype"] !=='A'){
+        header("location: 404.php");
+        exit;
+    }
 ?>
+
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 
     
 <meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
 <head>
         <meta charset="utf-8">
-        <title>Register</title>
+        <title>Users Request View</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta name="description" content="Portal for finding blood donors in LPU">
         <meta name="author" content="LPU">
         <link rel="shortcut icon" href="images/favicon.png" />
 
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
         <!-- The styles -->
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" >
         <link href="css/animate.css" rel="stylesheet" type="text/css" >
+        <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" >
         <link href="css/venobox.css" rel="stylesheet" type="text/css" >
         <link rel="stylesheet" href="css/styles.css" />
 
@@ -63,10 +92,12 @@ if(isset($_SESSION["loggedin"])){
                                     <a href="services.php" title="Services">Services</a>
                                 </li>
 
-                                <li><a href="contact.php" title="Contact">Contact</a></li>
-
-                                <li>
-                                    <a class="login-btn" href="login.php">Login/Sign Up</a>
+                                <li><a href="#" title="Contact">Contact</a></li>
+                                <li><a>Welcome&nbsp;<?php echo ($row["FNAME"]." ".$row["LNAME"]); ?></a>
+                                    <ul class="drop-down">
+                                        <li><a class="login-btn" href="password_change.php">Change Password</a></li>
+                                        <li><a class="login-btn" href="logout.php">Logout</a></li>
+                                    </ul>
                                 </li>
                             </ul>
                         </div>
@@ -89,9 +120,8 @@ if(isset($_SESSION["loggedin"])){
 
 
                         <h3>
-                            Register    
+                            Blood Request View
                         </h3>
-
 
                     </div>
 
@@ -105,80 +135,93 @@ if(isset($_SESSION["loggedin"])){
 
         <section class="section-content-block">
 
-        
-            <div class="container">
-                <div class="signup-form-wrapper">
+            <div class="container table-responsive">
 
-                    <div class="signup-form">
+                <div class="row">
+                    
+                <!-- <div class="col-lg-1 col-md-1 col-sm-0"></div>
+                <div class="col-lg-8 col-md-8 col-sm-12"> -->
+                <table class="table table-striped table-user ">
+                    <thead>
+                        <tr>
+                            <th>FIRST NAME</th>
+                            <th>LAST NAME</th>
+                            <th>REGISTRATION NUMBER</th>
+                            <th>MOBILE NUMBER</th>
+                            <th>BLOOD GROUP REQUESTED</th>
+                            <th>REASON</th>
+                            <th>DATE</th>
+                            <th>ACTION</th>
 
-                        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-                            <h2>Register</h2>
-                            <p class="hint-text">Create your account. It's free and only takes a minute.</p>
-                            <div class="form-group">
-                            <input type="text" class="form-control" name="first_name" placeholder="First Name" required="required">    
-                                <!-- <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-12"><input class="form-control" type="text" class="form-control" name="first_name" placeholder="First Name" required="required"></div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12"><input class="form-control" type="text" class="form-control" name="last_name" placeholder="Last Name" required="required"></div>
-                                </div>        	 -->
-                            </div><div class="form-group">
-                                 <input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required">  	
-                            </div>
-                            <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
-                                <input type="email" class="form-control" name="username" placeholder="Email" required="required" value="<?php echo $username; ?>">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="regno" placeholder="Registration Number" required="required">
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" class="form-control" name="mobno" placeholder="Contact Number" required="required">
-                            </div>
-                            <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
-                                <input type="password" class="form-control" name="password" placeholder="Password" required="required" value="<?php echo $password; ?>">
-                            </div>
-                            <div class="form-group <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
-                                <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required" value="<?php echo $confirm_password; ?>">
-                            </div>    
-                            <div class="form-group">
-                                <select class="form-control" name="bgrp" required>
-                                    <option value="" disabled selected hidden>Select your blood group</option>    
-                                    <option value="A+">A+</option>
-                                    <option value="A-">A-</option>
-                                    <option value="B+">B+</option>
-                                    <option value="B-">B-</option>
-                                    <option value="O+">O+</option>
-                                    <option value="O-">O-</option>
-                                    <option value="AB+">AB+</option>
-                                    <option value="AB-">AB-</option>
-                                </select>
-                            </div>    
-                            <div class="form-group">
-                                <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-success btn-lg btn-block">Register Now</button>
-                            </div>
-                             
-                        </form>
-                        <div class="text-center">Already have an account? <a href="login.php">Sign in</a></div>
-           
 
-            
+
+                        </tr>
                         
-                    </div>
+                    </thead>
+                    <tbody>
+                       
+                        <?php
+                        if(mysqli_num_rows($user_query)!==0){
+                            while($rows=mysqli_fetch_array($user_query))
+                            {
+                                $id_val=$rows['id'];
+                                if($rows["req_status"]==0){
+                                    $reqstat='Pending';
+                                }
+                                elseif($rows["req_status"]==1){
+                                    $reqstat='Accepted';
+                                    continue;
+                                }
+                                else{
+                                    $reqstat='Rejected';
+                                }
+                                echo '<tr>';
+                                echo '<td>'.$rows['FNAME'].'</td>';
+                                echo '<td>'.$rows['LNAME'].'</td>';
+                                echo '<td>'.$rows['regno'].'</td>';
+                                echo '<td>'.$rows['mobno'].'</td>';
+                                echo '<td>'.$rows['bgrp_req'].'</td>';
+                                echo '<td style="word-wrap: anywhere; min-width: 200px; text-align: center;">'.$rows['reason'].'</td>';
+                                echo '<td>'.$rows['created_at'].'</td>';
+                                //echo '<td>'.$reqstat.'</td>';
+                                echo '<td style="min-width: 200px;">
+                                <form action="'.htmlspecialchars($_SERVER["PHP_SELF"]).'" method="post">
+                                    <input type="hidden" name="id" value="'.$id_val.'">
+                                    <select class="form-control" name="status" required>
+                                    <option value="" disabled selected hidden>Select</option>    
+                                    <option value="0">Pending</option>
+                                    <option value="1">Accept</option>
+                                    <option value="2">Reject</option>
 
-                </div> <!-- end .row  -->
+                                </select>
+                                
+                                <div class="form-group">
+                                <button type="submit" class="btn btn-success btn-lg btn-block">Update</button>
+                                </div>
+                                </form></td>';
+                                echo '</tr>';
+                            }
+                        } 
+                        else{
+                            echo '<tr>';
+                            echo '<td colspan=8>No Record Found</td>';
+                            echo '</tr.';
+                        }  
+                            ?>
+                    </tbody>
+                </table>
+                <!-- </div>
+                <div class="col-lg-2 col-md-2 col-sm-0"></div> -->
+
+                </div>   
+
             </div>
-            
-       
 
         </section>
 
         <section class="section-content-block section-secondary-bg">
 
-            <div class="container">
-
-                
-            </div> <!--  end .container -->
+            
 
         </section> <!-- end .section-content-block  -->
 
@@ -346,6 +389,7 @@ if(isset($_SESSION["loggedin"])){
         <script src="js/jquery.backTop.min.js"></script>
         <script src="js/waypoints.min.js"></script>
         <script src="js/waypoints-sticky.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
         <script src="js/jquery.stellar.min.js"></script>
         <script src="js/jquery.counterup.min.js"></script>
         <script src="js/venobox.min.js"></script>

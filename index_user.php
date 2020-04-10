@@ -107,6 +107,9 @@ if($_SESSION["utype"] !=='U'){
                             </h3>
                             
                             <a href="userdonationhistory.php" class="btn btn-theme margin-top-32">View Your Donation History</a>
+                            <a href="user_blood_request.php" class="btn btn-theme margin-top-32">Create a Blood Request</a>
+                            <a href="user_blood_request_status.php" class="btn btn-theme margin-top-32">View Your Request Status</a>
+
 
 
 

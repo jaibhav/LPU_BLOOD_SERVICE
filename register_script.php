@@ -189,7 +189,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 						echo $mail->ErrorInfo;
 					} 
 					else{ 
-                        echo '<script>alert("Successfully Registered"); window.location="register.php"</script>';
+                        echo '<script>alert("Successfully Registered"); window.location="login.php"</script>';
 
                     }
                     $mail->smtpClose();

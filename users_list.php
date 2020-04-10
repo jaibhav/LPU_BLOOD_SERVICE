@@ -113,10 +113,6 @@
                             All Donor Details
                         </h3>
 
-                        <p class="page-breadcrumb">
-                            <a href="#">Home</a> / Contact
-                        </p>
-
 
                     </div>
 
@@ -130,13 +126,13 @@
 
         <section class="section-content-block">
 
-            <div class="container">
+            <div class="container table-responsive">
 
                 <div class="row">
                     
                 <!-- <div class="col-lg-1 col-md-1 col-sm-0"></div>
                 <div class="col-lg-8 col-md-8 col-sm-12"> -->
-                <table class="table table-striped table-user">
+                <table class="table table-striped table-user ">
                     <thead>
                         <tr>
                             <th>FIRST NAME</th>

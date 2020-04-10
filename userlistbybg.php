@@ -164,11 +164,6 @@
                             User Details
                         </h3>
 
-                        <p class="page-breadcrumb">
-                            <a href="#">Home</a> / Contact
-                        </p>
-
-
                     </div>
 
                 </div> <!-- end .row  -->
@@ -218,7 +213,7 @@
                 </div> <!-- end .row  -->
             </div>
 
-            <div class="container">
+            <div class="container table-responsive">
 
                 <div class="row">
                     

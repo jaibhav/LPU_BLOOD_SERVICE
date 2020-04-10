@@ -106,11 +106,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                             Contact Us
                         </h3>
 
-                        <p class="page-breadcrumb">
-                            <a href="#">Home</a> / Contact
-                        </p>
-
-
                     </div>
 
                 </div> <!-- end .row  -->

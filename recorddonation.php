@@ -179,11 +179,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                         Record Blood Donation
                         </h3>
 
-                        <p class="page-breadcrumb">
-                            <a href="#">Home</a> / Contact
-                        </p>
-
-
                     </div>
 
                 </div> <!-- end .row  -->

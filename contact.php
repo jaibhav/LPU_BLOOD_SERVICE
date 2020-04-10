@@ -7,10 +7,7 @@ if(isset($_SESSION["loggedin"])){
 }
 ?>
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
-
-    
+<html lang="en"> 
 <meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
 <head>
         <meta charset="utf-8">
@@ -19,11 +16,6 @@ if(isset($_SESSION["loggedin"])){
         <meta name="description" content="Portal for finding blood donors in LPU">
         <meta name="author" content="LPU">
         <link rel="shortcut icon" href="images/favicon.png" />
-
-        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
 
         <!-- The styles -->
         <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -97,11 +89,6 @@ if(isset($_SESSION["loggedin"])){
                         <h3>
                             Contact Us
                         </h3>
-
-                        <p class="page-breadcrumb">
-                            <a href="#">Home</a> / Contact
-                        </p>
-
 
                     </div>
 

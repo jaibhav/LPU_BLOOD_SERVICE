@@ -83,7 +83,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             }
                             else{
                                 header("location: index_loggedin.php");
-                                
+                                    
                             }
                         } else{
                             // Display an error message if password is not valid

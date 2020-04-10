@@ -13,24 +13,16 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 }
 ?>
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
-
-    
-<!-- Mirrored from templates.bwlthemes.com/blood_donation/v_2/faq.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Mar 2020 17:57:34 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=iso-8859-1" /><!-- /Added by HTTrack -->
+<html lang="en"> 
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
 <head>
         <meta charset="utf-8">
-        <title>FAQ - Reddrop Buddies - Blood Donation Campaign & Multi-Concept Activism Template</title>
+        <title>FAQ</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <meta name="description" content="Reddrop Buddies - Blood Donation Campaign & Multi-Concept Activism Template">
-        <meta name="author" content="xenioushk">
+        <meta name="description" content="Portal for finding blood donors in LPU">
+        <meta name="author" content="LPU">
         <link rel="shortcut icon" href="images/favicon.png" />
 
-        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
 
         <!-- The styles -->
         <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -50,37 +42,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
         <header class="main-header clearfix" data-sticky_header="true">
 
-            <div class="top-bar clearfix">
-
-                <div class="container">
-
-                    <div class="row">
-
-                        <div class="col-md-8 col-sm-12">
-
-                            <p>
-                                <span><i class="fa fa-building-o"></i> <strong>Contact: </strong>  East Shibgonj, Sylhet, 3100</span>
-                                <span>&nbsp;<i class="fa fa-phone"></i> <strong>Call Us:</strong> +880-1891-82709</span>
-                            </p>
-
-                        </div>
-
-                        <div class="col-md-4col-sm-12">
-                            <div class="top-bar-social">
-                                <a href="#"><i class="fa fa-facebook rounded-box"></i></a>
-                                <a href="#"><i class="fa fa-twitter rounded-box"></i></a>
-                                <a href="#"><i class="fa fa-google-plus rounded-box"></i></a>
-                                <a href="#"><i class="fa fa-instagram rounded-box"></i></a>
-                                <a href="#"><i class="fa fa-youtube rounded-box"></i></a>
-                            </div>   
-                        </div> 
-
-                    </div>
-
-                </div> <!--  end .container -->
-
-            </div> <!--  end .top-bar  -->
-
             <section class="header-wrapper navgiation-wrapper">
 
                 <div class="navbar navbar-default">			
@@ -92,76 +53,30 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="logo" href="index-2.php"><img alt="" src="images/logo.png"></a>
+                            <a class="logo" href="index.php"><img alt="" src="images/logo.png"></a>
                         </div>
+
 
                         <div class="navbar-collapse collapse">
                             <ul class="nav navbar-nav navbar-right">
-                                
                                 <li>
-                                    <a href="#">Home</a>
-                                    <ul class="drop-down">
-                                        <li><a href="index-2.php" title="Home Layout 01">Home 01</a></li>
-                                        <li><a href="home-2.php" title="Home Layout 02">Home 02</a></li>
-                                    </ul>
+                                    <a href="index.php" title="Home">Home</a>
                                 </li>
-
                                 
                                 <li><a href="about-us.php" title="About Us">About Us</a></li>
 
                                 <li>
-                                    <a href="#">Campaign</a>
-                                    <ul class="drop-down">
-                                        <li><a href="events.php">All Campaigns</a></li>
-                                        <li><a href="event-single.php">Single Campaign</a></li>
-                                    </ul>
+                                    <a href="services.php" title="Services">Services</a>
                                 </li>
 
-                                <li class="drop"><a href="#">Pages</a>
-                                    <ul class="drop-down">
-                                        
-                                        <li class="drop"><a href="#">Elements</a>
-                                            <ul class="drop-down level3">
-                                                <li><a href="element-cta.php">CTA/PROMO BOX</a></li>
-                                                <li><a href="element-counter.php">Fun Facts</a></li>
-                                                <li><a href="element-logos.php">Logos/Clients</a></li>
-                                                <li><a href="element-process.php">Process</a></li>
-                                                <li><a href="element-highlights.php">Highlights Box</a></li>
-                                                <li><a href="element-service.php">Services</a></li>
-                                                <li><a href="element-subscribe.php">Subscribe</a></li>
-                                                <li><a href="element-team.php">Team</a></li>
-                                                <li><a href="element-feedback.php">Testimonials</a></li>
-                                            </ul>
-                                        </li>
-                                       
-                                        <li class="drop"><a href="#">Gallery</a>
-                                            <ul class="drop-down level3">
-                                                <li><a href="gallery-1.php">Layout 01</a></li> 
-                                                <li><a href="gallery-2.php">Layout 02</a></li> 
+                                <li><a href="contact.php" title="Contact">Contact</a></li>
 
-                                            </ul>
-                                        </li>
-                                         <li><a href="faq.php" title="FAQ">FAQ</a></li>
-                                        <li><a href="404.php" title="404 Page">404 Page</a></li> 
-                                        <li class="drop"><a href="#">Level 3</a>
-                                            <ul class="drop-down level3">
-                                                <li><a href="#">Level 3.1</a></li>
-                                                <li><a href="#">Level 3.2</a></li>
-                                                <li><a href="#">Level 3.3</a></li>
-                                            </ul>
-                                        </li>
+                                <li><a>Welcome&nbsp;<?php echo ($row["FNAME"]." ".$row["LNAME"]); ?></a>
+                                    <ul class="drop-down">
+                                        <li><a class="login-btn" href="password_change.php">Change Password</a></li>
+                                        <li><a class="login-btn" href="logout.php">Logout</a></li>
                                     </ul>
                                 </li>
-
-                                <li>
-                                    <a href="#">Blog</a>
-                                    <ul class="drop-down">
-                                        <li><a href="blog.php">All Posts</a></li> 
-                                        <li><a href="single.php">Single Page</a></li>
-                                    </ul>
-                                </li>
-
-                                <li><a href="contact.php">Contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -185,11 +100,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                         <h3>
                             FAQ
                         </h3>
-
-                        <p class="page-breadcrumb">
-                            <a href="#">Home</a> / FAQ
-                        </p>
-
 
                     </div>
 
@@ -340,83 +250,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
         <section class="section-content-block section-secondary-bg">
 
-            <div class="container wow fadeInUp">
-                
-                <div class="row section-heading-wrapper">
-
-                    <div class="col-md-12 col-sm-12 text-center no-img-separator">
-                        <h2 class="section-heading">Our Sponsors</h2>
-                        <span class="heading-separator heading-separator-horizontal"></span>
-                        <h4 class="section-subheading">The sponsors who give their valuable amount to fulfill our mission.</h4>
-                    </div> <!-- end .col-sm-10  -->                      
-
-                </div> <!-- end .row  -->
-
-
-                <div class="row">
-
-                    <div class="logo-items logo-layout-1 owl-carousel text-center" data-items='7' data-nav='true' data-dots='false'>
-
-                        <div class="client-logo">
-
-                            <img src="images/logo_1.png" alt="" />
-
-                        </div>
-
-                        <div class="client-logo">
-
-                            <img src="images/logo_2.png" alt="" />
-
-                        </div>
-
-
-                        <div class="client-logo">
-
-                            <img src="images/logo_3.png" alt="" />
-
-                        </div>
-
-
-
-                        <div class="client-logo">
-
-                            <img src="images/logo_4.png" alt="" />
-
-                        </div>
-
-                        <div class="client-logo">
-
-                            <img src="images/logo_5.png" alt="" />
-
-                        </div>
-
-
-
-                        <div class="client-logo">
-
-                            <img src="images/logo_6.png" alt="" />
-
-                        </div>
-
-                        <div class="client-logo">
-
-                            <img src="images/logo_7.png" alt="" />
-
-                        </div>
-
-                        <div class="client-logo">
-
-                            <img src="images/logo_8.png" alt="" />
-
-                        </div>
-
-
-                    </div> <!-- end .testimonial-container  -->
-
-                </div> <!-- end row  -->
-
-            </div> <!-- end .container  -->
-
+           
         </section> <!--  end .section-client-logo -->
 
 
@@ -592,5 +426,4 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     </body>
 
 
-<!-- Mirrored from templates.bwlthemes.com/blood_donation/v_2/faq.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Mar 2020 17:57:34 GMT -->
 </html>
