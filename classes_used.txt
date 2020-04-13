@@ -51,6 +51,7 @@ footer-widget clearfix
 footer-contents
 copyright-text
 about-details
+about-us-container theme-custom-box-shadow
 custom-bullet-list
 fadeInLeft
 team-layout-1 theme-custom-box-shadow theme-custom-box-animation
@@ -69,3 +70,13 @@ page-header
 signup-form-wrapper
 signup-form
 help-block
+section-content-block section-faq
+section-heading
+section-subheading
+accordion
+panel panel-default faq-box
+panel-heading
+panel-title
+accordion-toggle collapsed
+collapseOne
+panel-collapse collapse
