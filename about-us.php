@@ -17,11 +17,9 @@ if(isset($_SESSION["loggedin"])){
         <meta name="author" content="LPU">
         <link rel="shortcut icon" href="images/favicon.png" />
 
-        <!-- The styles -->
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" >
         <link href="css/animate.css" rel="stylesheet" type="text/css" >
-        <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" >
         <link href="css/venobox.css" rel="stylesheet" type="text/css" >
         <link rel="stylesheet" href="css/styles.css" />
 
@@ -31,7 +29,6 @@ if(isset($_SESSION["loggedin"])){
             <span class="margin-bottom"><img src="images/loader.gif" alt="" /></span>
         </div>
 
-        <!--  HEADER -->
 
         <header class="main-header clearfix" data-sticky_header="true">
         
@@ -73,9 +70,8 @@ if(isset($_SESSION["loggedin"])){
 
             </section>
 
-        </header> <!-- end main-header  -->
+        </header> 
 
-        <!--  PAGE HEADING -->
 
         <section class="page-header">
 
@@ -91,13 +87,12 @@ if(isset($_SESSION["loggedin"])){
 
                     </div>
 
-                </div> <!-- end .row  -->
+                </div>
 
-            </div> <!-- end .container  -->
+            </div> 
 
-        </section> <!-- end .page-header  -->
+        </section> 
         
-        <!--  FEATURED ABOUT US SECTION-->
 
         <section class="section-content-block">
  
@@ -114,45 +109,42 @@ if(isset($_SESSION["loggedin"])){
                                 <div class="col-lg-12 col-md-12 col-sm-12 text-center no-img-separator">
                                     <h2><strong>Who We Are?</strong></h2>
                                     <span class="heading-separator heading-separator-horizontal"></span>
-                                </div> <!-- end .col-sm-10  --> 
-
+                                </div> 
                             </div>
 
                             <div class="about-details"> 
 
-                                <p>Blood Buddies is for public donation center with blood donation members in the changing health care system.</p>
+                                <p>LPU Blood Service is a platform with a mission to improve the healthcare facility for the students of Lovely Professional University.</p>
 
 
                                 <ul class="custom-bullet-list">
-                                    <li>Specialist blood donors and clinical supervision.</li>
-                                    <li>Increasing communication with our members.</li>
-                                    <li>High quality assessment, diagnosis and treatment.</li>
-                                    <li>Examine critically to ensure alignment.</li>
-                                    <li>The extra care of a multi-disciplinary team.</li>
+                                    <li>Wide and quick reach in case of blood emergencies.</li>
+                                    <li>Easy to use interface.</li>
+                                    <li>Ability for users to generate blood requests.</li>
+                                    <li>Ability for users to track their donation history.</li>
                                 </ul>
 
-                            </div> <!--  end .about-details -->  
+                            </div>  
 
                         </div>
 
-                    </div> <!--  end .col-lg-12 col-md-6 col-sm-12 col-xs-12 -->  
+                    </div>   
 
-                </div> <!--  end .row  -->
+                </div> 
             </div>
 
-        </section> <!--  end .section-about-us -->
+        </section> 
 
-        <!-- SECTION TEAM   -->
 
-        <section class="section-content-block section-custom-bg" data-bg_img='images/team_feat_bg.jpg' data-bg_size='cover' data-bg_position='top center' data-bg_opacity="0">
+        <section class="section-content-block section-custom-bg" >
 
-        <div class="container margin-top-48 margin-bottom-48 wow fadeInLeft">
+        <div class="container margin-top-24 margin-bottom-48 wow fadeInLeft">
                 <div class="row section-heading-wrapper margin-bottom-11">
 
                     <div class="col-lg-12 col-md-12 col-sm-12 text-center no-img-separator">
                         <h2><strong>Our Team</strong></h2>
                         <span class="heading-separator heading-separator-horizontal"></span>
-                    </div> <!-- end .col-sm-10  --> 
+                    </div> 
 
                 </div>
                 
@@ -163,12 +155,9 @@ if(isset($_SESSION["loggedin"])){
                             <div class="team-layout-1 theme-custom-box-shadow theme-custom-box-animation">
 
                                 <figure class="team-member">
-                                    <a href="#" title="ALEXANDER GARY">
-                                        <img src="images/team_9.jpg" alt="ALEXANDER GARY"/>
-                                    </a>
+                                        <img src="images/team_1.jpg" alt="JAIBHAV THUKRAL"/>
 
-                                </figure> <!-- end. team-member  -->
-
+                                </figure> 
                                 <article class="team-info">
                                     <h3>JAIBHAV THUKRAL</h3>                                   
                                     <h4>BACK-END DEVELOPER</h4>
@@ -178,24 +167,21 @@ if(isset($_SESSION["loggedin"])){
 
                                     <div class="text-center clearfix">
                                        <h3>11710641</h3>
-                                    </div> <!-- end .author-social-box  -->
+                                    </div> 
 
                                 </div>                             
 
-                            </div> <!--  end team-layout-1 -->
-
-                        </div> <!--  end .col-md-4 col-sm-12  -->
+                            </div> 
+                        </div> 
 
                         <div class="col-md-4 col-sm-12">
 
                             <div class="team-layout-1 theme-custom-box-shadow theme-custom-box-animation">
 
                                 <figure class="team-member">
-                                    <a href="#" title="MELISSA MUNOZ">
-                                        <img src="images/team_6.jpg" alt="MELISSA MUNOZ" />
-                                    </a>
+                                        <img src="images/team_2.jpg" alt="PRAYAS" />
 
-                                </figure> <!-- end. team-member  -->
+                                </figure> 
 
                                 <article class="team-info">
                                     <h3>PRAYAS</h3>                                   
@@ -205,24 +191,21 @@ if(isset($_SESSION["loggedin"])){
 
                                     <div class="text-center clearfix">
                                        <h3>11710015</h3>
-                                    </div> <!-- end .author-social-box  -->
-
+                                    </div> 
                                 </div>                             
 
-                            </div> <!--  end team layout-1 -->
+                            </div> 
 
-                        </div> <!--  end .col-md-4 col-sm-12  -->
+                        </div> 
 
                         <div class="col-md-4 col-sm-12">
 
                             <div class="team-layout-1 theme-custom-box-shadow theme-custom-box-animation">
 
                                 <figure class="team-member">
-                                    <a href="#" title="JOHN ABRAHAM">
-                                        <img src="images/team_7.jpg" alt="JOHN ABRAHAM" />
-                                    </a>                               
+                                        <img src="images/team_3.jpg" alt="MANSI SINGH" />
 
-                                </figure> <!-- end. team-member  -->
+                                </figure> 
 
                                 <article class="team-info">
                                     <h3>MANSI SINGH</h3>                                   
@@ -231,191 +214,183 @@ if(isset($_SESSION["loggedin"])){
                                 <div class="team-info">
 
                                     <div class="text-center clearfix">
-                                       <h3>11710641</h3>
-                                    </div> <!-- end .author-social-box  -->
+                                       <h3>11703557</h3>
+                                    </div> 
 
                                 </div>                             
 
-                            </div> <!--  end team-layout-1 -->
+                            </div> 
 
-                        </div> <!--  end .col-md-4 col-sm-12  -->  
+                        </div> 
 
 
-                    </div> <!-- end .row  --> 
+                    </div>  
                     
 
-            </div> <!-- end .container  -->
+            </div> 
+        </section>
 
 
-        <!-- START FOOTER  -->
+            <footer>            
 
-        <footer>            
+                <section class="footer-widget-area footer-widget-area-bg">
 
-            <section class="footer-widget-area footer-widget-area-bg">
+                    <div class="container">
 
-                <div class="container">
+                        <div class="row">
 
-                    <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="about-footer">
 
-                            <div class="about-footer">
+                                    <div class="row">
 
-                                <div class="row">
+                                        <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                                            <img src="images/logo_footer.png" alt="Logo" />
+                                        </div>
 
-                                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
-                                        <img src="images/logo_footer.png" alt="Logo" />
-                                    </div> <!--  end col-lg-3-->
+                                        <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                                            <p>
+                                                We are working towards the welfare of the students and other members of Lovely Professional University. 
+                                                LBS is a platform for blood requirement and emergency. The aim is to provide one stop solution to this need.
+                                            </p>
+                                        </div> 
 
-                                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
-                                        <p>
-                                            We are working towards the welfare of the students and other members of Lovely Professional University. 
-                                            LBS is a platform for blood requirement and emergency. The aim is to provide one stop solution to this need.
-                                        </p>
-                                    </div> <!--  end .col-lg-9  -->
+                                    </div> 
 
-                                </div> <!--  end .row -->
+                                </div>
 
-                            </div> <!--  end .about-footer  -->
+                            </div>
 
-                        </div> <!--  end .col-md-12  -->
+                        </div>
 
-                    </div> <!--  end .row  -->
+                        <div class="row"> 						                      
 
-                    <div class="row"> 						                      
+                            <div class="col-md-6 col-sm-6 col-xs-12">
 
-                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="footer-widget">
 
-                            <div class="footer-widget">
+                                    <div class="sidebar-widget-wrapper">
 
-                                <div class="sidebar-widget-wrapper">
-
-                                    <div class="footer-widget-header clearfix">
-                                        <h3>Contact Us</h3>
-                                    </div>  <!--  end .footer-widget-header --> 
+                                        <div class="footer-widget-header clearfix">
+                                            <h3>Contact Us</h3>
+                                        </div> 
 
 
-                                    <div class="textwidget">                                       
+                                        <div class="textwidget">                                       
 
-                                        <i class="fa fa-envelope-o fa-contact"></i> <p><a href="mailto:lpubloodservice@gmail.com">lpubloodservice@gmail.com</a></p>
+                                            <i class="fa fa-envelope-o fa-contact"></i> <p><a href="mailto:lpubloodservice@gmail.com">lpubloodservice@gmail.com</a></p>
 
-                                        <i class="fa fa-location-arrow fa-contact"></i> <p>UniHospital, LPU<br/>Phagwara, Punjab</p>
+                                            <i class="fa fa-location-arrow fa-contact"></i> <p>UniHospital, LPU<br/>Phagwara, Punjab</p>
 
-                                        <i class="fa fa-phone fa-contact"></i> <p>Mobile:&nbsp; +91-7017349434</p>                              
+                                            <i class="fa fa-phone fa-contact"></i> <p>Mobile:&nbsp; +91-7017349434</p>                              
 
-                                    </div>
+                                        </div>
 
-                                </div> <!-- end .footer-widget-wrapper  -->
+                                    </div> 
 
-                            </div> <!--  end .footer-widget  -->
-
-                        </div> <!--  end .col-md-4 col-sm-12 -->  
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-
-
-                        </div> <!--  end .col-md-4 col-sm-12 -->  
-
-                        <div class="col-md-6 col-sm-12 col-xs-12">
-
-                            <div class="footer-widget clearfix">
-
-                                <div class="sidebar-widget-wrapper">
-
-                                    <div class="footer-widget-header clearfix">
-                                        <h3>Useful Links</h3>
-                                    </div>  <!--  end .footer-widget-header --> 
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
 
 
-                                    <ul class="footer-useful-links">
+                            </div>
 
-                                        <li>
-                                            <a href="index.php">
-                                                <i class="fa fa-caret-right fa-footer"></i>
-                                                Home
-                                            </a>
-                                        </li>
+                            <div class="col-md-6 col-sm-12 col-xs-12">
 
-                                        <li>
-                                            <a href="about-us.php">
-                                                <i class="fa fa-caret-right fa-footer"></i>
-                                                About Us
-                                            </a>
-                                        </li>
+                                <div class="footer-widget clearfix">
 
-                                        <li>
-                                            <a href="services.php">
-                                                <i class="fa fa-caret-right fa-footer"></i>
-                                                Services
-                                            </a>
-                                        </li>
+                                    <div class="sidebar-widget-wrapper">
 
-                                        <li>
-                                            <a href="faq.php">
-                                                <i class="fa fa-caret-right fa-footer"></i>
-                                                Frequently Asked Questions
-                                            </a>
-                                        </li>
+                                        <div class="footer-widget-header clearfix">
+                                            <h3>Useful Links</h3>
+                                        </div> 
 
-                                        <li>
-                                            <a href="contact.php">
-                                                <i class="fa fa-caret-right fa-footer"></i>
-                                                Contact Us
-                                            </a>
-                                        </li>                
 
-                                    </ul>
+                                        <ul class="footer-useful-links">
 
-                                </div> <!--  end .footer-widget  -->        
+                                            <li>
+                                                <a href="index.php">
+                                                    <i class="fa fa-caret-right fa-footer"></i>
+                                                    Home
+                                                </a>
+                                            </li>
 
-                            </div> <!--  end .footer-widget  -->            
+                                            <li>
+                                                <a href="about-us.php">
+                                                    <i class="fa fa-caret-right fa-footer"></i>
+                                                    About Us
+                                                </a>
+                                            </li>
 
-                        </div> <!--  end .col-md-4 col-sm-12 -->    
+                                            <li>
+                                                <a href="services.php">
+                                                    <i class="fa fa-caret-right fa-footer"></i>
+                                                    Services
+                                                </a>
+                                            </li>
 
-                         
+                                            <li>
+                                                <a href="faq.php">
+                                                    <i class="fa fa-caret-right fa-footer"></i>
+                                                    Frequently Asked Questions
+                                                </a>
+                                            </li>
 
-                    </div> <!-- end row  -->
+                                            <li>
+                                                <a href="contact.php">
+                                                    <i class="fa fa-caret-right fa-footer"></i>
+                                                    Contact Us
+                                                </a>
+                                            </li>                
 
-                </div> <!-- end .container  -->
+                                        </ul>
 
-            </section> <!--  end .footer-widget-area  -->
+                                    </div>       
 
-            <!--FOOTER CONTENT  -->
+                                </div>       
 
-            <section class="footer-contents">
+                            </div>
+                            
 
-                <div class="container">
+                        </div>
 
-                    <div class="row clearfix">
-                        
-                        <div class="col-md-12 col-sm-12 text-center">
-                            <p class="copyright-text"> Copyright 2020 - LPU Blood Service. All Rights Reserved.</p>
-                        </div>  <!-- end .col-sm-6  -->
+                    </div>
 
-                    </div> <!-- end .row  -->                                    
+                </section>
 
-                </div> <!--  end .container  -->
 
-            </section> <!--  end .footer-content  -->
+                <section class="footer-contents">
 
-        </footer>
+                    <div class="container">
 
-        <!-- END FOOTER  -->
+                        <div class="row clearfix">
+                            
+                            <div class="col-md-12 col-sm-12 text-center">
+                                <p class="copyright-text"> Copyright 2020 - LPU Blood Service. All Rights Reserved.</p>
+                            </div> 
 
-        <!-- Back To Top Button  -->
+                        </div>                                    
 
-        <a id="backTop">Back To Top</a>
+                    </div>
 
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/wow.min.js"></script>
-        <script src="js/jquery.backTop.min.js"></script>
-        <script src="js/waypoints.min.js"></script>
-        <script src="js/waypoints-sticky.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/jquery.stellar.min.js"></script>
-        <script src="js/jquery.counterup.min.js"></script>
-        <script src="js/venobox.min.js"></script>
-        <script src="js/custom-scripts.js"></script>
+                </section>
+
+            </footer>
+
+                <a id="backTop">Back To Top</a>
+
+                <script src="js/jquery.min.js"></script>
+                <script src="js/bootstrap.min.js"></script>
+                <script src="js/wow.min.js"></script>
+                <script src="js/jquery.backTop.min.js"></script>
+                <script src="js/waypoints.min.js"></script>
+                <script src="js/waypoints-sticky.min.js"></script>
+                <script src="js/jquery.stellar.min.js"></script>
+                <script src="js/venobox.min.js"></script>
+                <script src="js/custom-scripts.js"></script>
+
+
     </body>
 
 

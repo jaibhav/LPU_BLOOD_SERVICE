@@ -27,66 +27,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     if (mysqli_query($link,$sql_users))
              {
                  echo '<script>alert("Record Added Successfully"); window.location="recorddonation.php"</script>';
-                // exit;
             }
             else{
                 echo '<script>alert("DONOR NOT FOUND"); window.location="recorddonation.php"</script>';
-                //echo mysqli_error($link);
 
             }
         }
 
 ?>
-
- <?php
-    // $row_data='';
-    // if($_SERVER["REQUEST_METHOD"] == "POST"){
-    //     $rno=trim($_POST["regno"]);
-    // $sql_users="SELECT * FROM users where rno='$rno' ";
-    // $user_query=mysqli_query($link,$sql_users);
-    // if (mysqli_num_rows($user_query) == 0)
-    //             //error here
-    //          {
-    //              echo '<script>alert("No Donor Found"); window.location="userlistbybg.php"</script>';
-    //             // exit;
-
-
-
-    //             }
-    //             else{
-    //                 while($rows=mysqli_fetch_array($user_query))
-    //                 {
-    //                     $row_data .= '<tr>
-    //                      <td>'.$rows['FNAME'].'</td>
-    //                      <td>'.$rows['LNAME'].'</td>
-    //                      <td>'.$rows['username'].'</td>
-    //                      <td>'.$rows['regno'].'</td>
-    //                      <td>'.$rows['mobno'].'</td>
-    //                      <td>'.$rows['bgrp'].'</td>
-    //                      </tr>';
-    //                 }
-                    
-    //                 $table_data='<table class="table table-striped table-user">
-    //                 <thead>
-    //                     <tr>
-    //                         <th>FIRST NAME</th>
-    //                         <th>LAST NAME</th>
-    //                         <th>EMAIL</th>
-    //                         <th>REGISTRATION NUMBER</th>
-    //                         <th>MOBILE NUMBER</th>
-    //                         <th>BLOOD GROUP</th>
-
-
-
-    //                     </tr>
-                        
-    //                 </thead>
-    //                 <tbody>'.$row_data.'</tbody>
-    //             </table>';
-    //             }
-   
-    // }
-    ?> 
 
 <!DOCTYPE html>
 <html lang="en">
@@ -101,16 +49,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <meta name="author" content="LPU">
         <link rel="shortcut icon" href="images/favicon.png" />
 
-        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-
-        <!-- The styles -->
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" >
         <link href="css/animate.css" rel="stylesheet" type="text/css" >
-        <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" >
         <link href="css/venobox.css" rel="stylesheet" type="text/css" >
         <link rel="stylesheet" href="css/styles.css" />
 
@@ -120,7 +61,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <span class="margin-bottom"><img src="images/loader.gif" alt="" /></span>
         </div>
 
-        <!--  HEADER -->
 
         <header class="main-header clearfix" data-sticky_header="true">
         
@@ -162,9 +102,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
             </section>
 
-        </header> <!-- end main-header  -->
+        </header> 
 
-        <!--  PAGE HEADING -->
 
         <section class="page-header" data-stellar-background-ratio="1.2">
 
@@ -181,13 +120,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
                     </div>
 
-                </div> <!-- end .row  -->
+                </div> 
 
-            </div> <!-- end .container  -->
+            </div> 
 
-        </section> <!-- end .page-header  -->
+        </section> 
 
-        <!--  MAIN CONTENT  -->
 
         <section class="section-content-block">
         <div class="container">
@@ -196,11 +134,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     <div class="signup-form">
 
                         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-                            <h2>Record a Blood Donation</h2>
+                            <h3>New Blood Donation</h3>
                             
                             
                             <div class="form-group">
-                            <label>Enter Registration Number</label>
                             <input type="text" class="form-control" name="regno" placeholder="Registration Number" required="required">
 
                             </div>
@@ -216,26 +153,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                         
                     </div>
 
-                </div> <!-- end .row  -->
+                </div> 
             </div>
 
-            <div class="container">
-
-                <div class="row">
-                    
-                <!-- <div class="col-lg-1 col-md-1 col-sm-0"></div>
-                <div class="col-lg-8 col-md-8 col-sm-12"> -->
-                
-                <!-- </div>
-                <div class="col-lg-2 col-md-2 col-sm-0"></div> -->
-
-                <?php
-                    //echo $table_data;
-                ?>
-
-                </div>   
-
-            </div>
 
         </section>
 
@@ -243,9 +163,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
             
 
-        </section> <!-- end .section-content-block  -->
+        </section> 
 
-        <!-- START FOOTER  -->
 
         <footer>            
 

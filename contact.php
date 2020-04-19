@@ -1,3 +1,4 @@
+<?php include 'contactscript.php' ?>
 <?php
 session_start();
  
@@ -17,11 +18,9 @@ if(isset($_SESSION["loggedin"])){
         <meta name="author" content="LPU">
         <link rel="shortcut icon" href="images/favicon.png" />
 
-        <!-- The styles -->
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" >
         <link href="css/animate.css" rel="stylesheet" type="text/css" >
-        <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" >
         <link href="css/venobox.css" rel="stylesheet" type="text/css" >
         <link rel="stylesheet" href="css/styles.css" />
 
@@ -31,7 +30,6 @@ if(isset($_SESSION["loggedin"])){
             <span class="margin-bottom"><img src="images/loader.gif" alt="" /></span>
         </div>
 
-        <!--  HEADER -->
 
         <header class="main-header clearfix" data-sticky_header="true">
         
@@ -73,9 +71,7 @@ if(isset($_SESSION["loggedin"])){
 
             </section>
 
-        </header> <!-- end main-header  -->
-
-        <!--  PAGE HEADING -->
+        </header> 
 
         <section class="page-header" data-stellar-background-ratio="1.2">
 
@@ -92,13 +88,11 @@ if(isset($_SESSION["loggedin"])){
 
                     </div>
 
-                </div> <!-- end .row  -->
+                </div> 
+            </div>
 
-            </div> <!-- end .container  -->
+        </section>
 
-        </section> <!-- end .page-header  -->
-
-        <!--  MAIN CONTENT  -->
 
         <section class="section-content-block">
 
@@ -173,7 +167,7 @@ if(isset($_SESSION["loggedin"])){
 
                             <h2 class="contact-title">Say hello to us</h2>
 
-                            <form role="form" action="php/mail_handler.php" method="post" id="contact-form">
+                            <form  action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" id="contact-form">
 
                                 <div class="form-group">
                                     <input type="text" class="form-control" id="user_name" name="user_name" placeholder="Name" data-msg="Please Write Your Name" />
@@ -199,9 +193,9 @@ if(isset($_SESSION["loggedin"])){
 
                             </form>
 
-                        </div> <!-- end .contact-form-block  -->
+                        </div> 
 
-                    </div> <!--  end col-sm-6  -->
+                    </div> 
 
                     <div class="col-sm-6 wow fadeInRight">
 
@@ -214,186 +208,177 @@ if(isset($_SESSION["loggedin"])){
                                 <iframe class="map_div" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3410.649317441724!2d75.70491641546494!3d31.258129881456988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5f60ba048471%3A0xd373a0a87d6db2d1!2sUni%20Hospital%20LPU!5e0!3m2!1sen!2sin!4v1585743016509!5m2!1sen!2sin"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                             </div>
 
-                        </div> <!-- end .section-content-block  -->                            
+                        </div>                            
 
-                    </div> <!--  end col-sm-6  -->                    
+                    </div>                  
 
-                </div> <!-- end row  -->
+                </div>
+            </div> 
 
-            </div> <!--  end .container -->
+        </section> 
 
-        </section> <!-- end .section-content-block  -->
 
-        <!-- START FOOTER  -->
+ <footer>            
 
-        <footer>            
+                <section class="footer-widget-area footer-widget-area-bg">
 
-            <section class="footer-widget-area footer-widget-area-bg">
+                    <div class="container">
 
-                <div class="container">
+                        <div class="row">
 
-                    <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="about-footer">
 
-                            <div class="about-footer">
+                                    <div class="row">
 
-                                <div class="row">
+                                        <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                                            <img src="images/logo_footer.png" alt="Logo" />
+                                        </div>
 
-                                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
-                                        <img src="images/logo_footer.png" alt="Logo" />
-                                    </div> <!--  end col-lg-3-->
+                                        <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                                            <p>
+                                                We are working towards the welfare of the students and other members of Lovely Professional University. 
+                                                LBS is a platform for blood requirement and emergency. The aim is to provide one stop solution to this need.
+                                            </p>
+                                        </div> 
 
-                                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
-                                        <p>
-                                            We are working towards the welfare of the students and other members of Lovely Professional University. 
-                                            LBS is a platform for blood requirement and emergency. The aim is to provide one stop solution to this need.
-                                        </p>
-                                    </div> <!--  end .col-lg-9  -->
+                                    </div> 
 
-                                </div> <!--  end .row -->
+                                </div>
 
-                            </div> <!--  end .about-footer  -->
+                            </div>
 
-                        </div> <!--  end .col-md-12  -->
+                        </div>
 
-                    </div> <!--  end .row  -->
+                        <div class="row"> 						                      
 
-                    <div class="row"> 						                      
+                            <div class="col-md-6 col-sm-6 col-xs-12">
 
-                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="footer-widget">
 
-                            <div class="footer-widget">
+                                    <div class="sidebar-widget-wrapper">
 
-                                <div class="sidebar-widget-wrapper">
+                                        <div class="footer-widget-header clearfix">
+                                            <h3>Contact Us</h3>
+                                        </div> 
 
-                                    <div class="footer-widget-header clearfix">
-                                        <h3>Contact Us</h3>
-                                    </div>  <!--  end .footer-widget-header --> 
 
+                                        <div class="textwidget">                                       
 
-                                    <div class="textwidget">                                       
+                                            <i class="fa fa-envelope-o fa-contact"></i> <p><a href="mailto:lpubloodservice@gmail.com">lpubloodservice@gmail.com</a></p>
 
-                                        <i class="fa fa-envelope-o fa-contact"></i> <p><a href="mailto:lpubloodservice@gmail.com">lpubloodservice@gmail.com</a></p>
+                                            <i class="fa fa-location-arrow fa-contact"></i> <p>UniHospital, LPU<br/>Phagwara, Punjab</p>
 
-                                        <i class="fa fa-location-arrow fa-contact"></i> <p>UniHospital, LPU<br/>Phagwara, Punjab</p>
+                                            <i class="fa fa-phone fa-contact"></i> <p>Mobile:&nbsp; +91-7017349434</p>                              
 
-                                        <i class="fa fa-phone fa-contact"></i> <p>Mobile:&nbsp; +91-7017349434</p>                              
+                                        </div>
 
-                                    </div>
+                                    </div> 
 
-                                </div> <!-- end .footer-widget-wrapper  -->
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
 
-                            </div> <!--  end .footer-widget  -->
 
-                        </div> <!--  end .col-md-4 col-sm-12 -->  
-                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            </div>
 
+                            <div class="col-md-6 col-sm-12 col-xs-12">
 
-                        </div> <!--  end .col-md-4 col-sm-12 -->  
+                                <div class="footer-widget clearfix">
 
-                        <div class="col-md-6 col-sm-12 col-xs-12">
+                                    <div class="sidebar-widget-wrapper">
 
-                            <div class="footer-widget clearfix">
+                                        <div class="footer-widget-header clearfix">
+                                            <h3>Useful Links</h3>
+                                        </div> 
 
-                                <div class="sidebar-widget-wrapper">
 
-                                    <div class="footer-widget-header clearfix">
-                                        <h3>Useful Links</h3>
-                                    </div>  <!--  end .footer-widget-header --> 
+                                        <ul class="footer-useful-links">
 
+                                            <li>
+                                                <a href="index.php">
+                                                    <i class="fa fa-caret-right fa-footer"></i>
+                                                    Home
+                                                </a>
+                                            </li>
 
-                                    <ul class="footer-useful-links">
+                                            <li>
+                                                <a href="about-us.php">
+                                                    <i class="fa fa-caret-right fa-footer"></i>
+                                                    About Us
+                                                </a>
+                                            </li>
 
-                                        <li>
-                                            <a href="index.php">
-                                                <i class="fa fa-caret-right fa-footer"></i>
-                                                Home
-                                            </a>
-                                        </li>
+                                            <li>
+                                                <a href="services.php">
+                                                    <i class="fa fa-caret-right fa-footer"></i>
+                                                    Services
+                                                </a>
+                                            </li>
 
-                                        <li>
-                                            <a href="about-us.php">
-                                                <i class="fa fa-caret-right fa-footer"></i>
-                                                About Us
-                                            </a>
-                                        </li>
+                                            <li>
+                                                <a href="faq.php">
+                                                    <i class="fa fa-caret-right fa-footer"></i>
+                                                    Frequently Asked Questions
+                                                </a>
+                                            </li>
 
-                                        <li>
-                                            <a href="services.php">
-                                                <i class="fa fa-caret-right fa-footer"></i>
-                                                Services
-                                            </a>
-                                        </li>
+                                            <li>
+                                                <a href="contact.php">
+                                                    <i class="fa fa-caret-right fa-footer"></i>
+                                                    Contact Us
+                                                </a>
+                                            </li>                
 
-                                        <li>
-                                            <a href="faq.php">
-                                                <i class="fa fa-caret-right fa-footer"></i>
-                                                Frequently Asked Questions
-                                            </a>
-                                        </li>
+                                        </ul>
 
-                                        <li>
-                                            <a href="contact.php">
-                                                <i class="fa fa-caret-right fa-footer"></i>
-                                                Contact Us
-                                            </a>
-                                        </li>                
+                                    </div>       
 
-                                    </ul>
+                                </div>       
 
-                                </div> <!--  end .footer-widget  -->        
+                            </div>
+                            
 
-                            </div> <!--  end .footer-widget  -->            
+                        </div>
 
-                        </div> <!--  end .col-md-4 col-sm-12 -->    
+                    </div>
 
-                         
+                </section>
 
-                    </div> <!-- end row  -->
 
-                </div> <!-- end .container  -->
+                <section class="footer-contents">
 
-            </section> <!--  end .footer-widget-area  -->
+                    <div class="container">
 
-            <!--FOOTER CONTENT  -->
+                        <div class="row clearfix">
+                            
+                            <div class="col-md-12 col-sm-12 text-center">
+                                <p class="copyright-text"> Copyright 2020 - LPU Blood Service. All Rights Reserved.</p>
+                            </div> 
 
-            <section class="footer-contents">
+                        </div>                                    
 
-                <div class="container">
+                    </div>
 
-                    <div class="row clearfix">
-                        
-                        <div class="col-md-12 col-sm-12 text-center">
-                            <p class="copyright-text"> Copyright 2020 - LPU Blood Service. All Rights Reserved.</p>
-                        </div>  <!-- end .col-sm-6  -->
+                </section>
 
-                    </div> <!-- end .row  -->                                    
+            </footer>
 
-                </div> <!--  end .container  -->
+                <a id="backTop">Back To Top</a>
 
-            </section> <!--  end .footer-content  -->
+                <script src="js/jquery.min.js"></script>
+                <script src="js/bootstrap.min.js"></script>
+                <script src="js/wow.min.js"></script>
+                <script src="js/jquery.backTop.min.js"></script>
+                <script src="js/waypoints.min.js"></script>
+                <script src="js/waypoints-sticky.min.js"></script>
+                <script src="js/jquery.stellar.min.js"></script>
+                <script src="js/venobox.min.js"></script>
+                <script src="js/custom-scripts.js"></script>
 
-        </footer>
-
-        <!-- END FOOTER  -->
-
-        <!-- Back To Top Button  -->
-
-        <a id="backTop">Back To Top</a>
-
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/wow.min.js"></script>
-        <script src="js/jquery.backTop.min.js"></script>
-        <script src="js/waypoints.min.js"></script>
-        <script src="js/waypoints-sticky.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/jquery.stellar.min.js"></script>
-        <script src="js/jquery.counterup.min.js"></script>
-        <script src="js/venobox.min.js"></script>
-        <script src="js/custom-scripts.js"></script>
 
     </body>
 
-</html>
+
+</html>      

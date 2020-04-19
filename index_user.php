@@ -29,7 +29,6 @@ if($_SESSION["utype"] !=='U'){
         <meta name="author" content="LPU">
         <link rel="shortcut icon" href="images/favicon.png" />
 
-        <!-- The styles -->
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" >
         <link href="css/animate.css" rel="stylesheet" type="text/css" >
@@ -43,7 +42,6 @@ if($_SESSION["utype"] !=='U'){
             <span ><img src="images/loader.gif" alt="" /></span>
         </div>
 
-        <!--  HEADER -->
 
         <header class="main-header clearfix" data-sticky_header="true">
         
@@ -83,14 +81,12 @@ if($_SESSION["utype"] !=='U'){
                             </ul>
                         </div>
                     </div>
-                    <!-- <div class="container"><h3>Hi, <b></b>,Welcome to our site.</h3></div> -->
                 </div>
 
             </section>
 
-        </header> <!-- end main-header  -->
+        </header> 
 
-        <!--  HOME 2 BANNER BLOCK  -->
 
         <section class="section-banner" data-bg_img="images/home_1.jpg" data-bg_color="#111111" data-bg_opacity="0.1" >
 
@@ -114,14 +110,13 @@ if($_SESSION["utype"] !=='U'){
 
 
                         </div>
-                    </div> <!-- end .col-md-12  -->
+                    </div> 
                 </div>
 
             </div>
 
         </section>
 
-        <!--  SECTION DONATION PROCESS -->
 
         <section class="section-content-block section-process">
 
@@ -134,7 +129,7 @@ if($_SESSION["utype"] !=='U'){
                         <p class="section-subheading">The donation process from the time you register until you donate</p>
                     </div>                   
 
-                </div> <!--  end .row  -->
+                </div> 
                 
                 <div class="row section-heading-wrapper">
 
@@ -145,103 +140,98 @@ if($_SESSION["utype"] !=='U'){
                     </div>                       
 
 
-                </div> <!-- end .row  -->
-
+                </div> 
                 <div class="row wow fadeInUp">
 
-                    <div class="col-lg-6 col-md-offset-0 col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12">
+<div class="col-lg-6 col-md-offset-0 col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12">
 
-                        <div class="process-layout">
+    <div class="process-layout">
 
-                            <figure class="process-img">
+        <figure class="process-img">
 
-                                <img src="images/process_1.jpg" alt="service" />
-                                <div class="step">
-                                    <h3>1</h3>
-                                </div>
-                            </figure> <!-- end .cause-img  -->
+            <img src="images/process_1.jpg" alt="service" />
+            <div class="step">
+                <h3>1</h3>
+            </div>
+        </figure> 
 
-                            <article class="process-info">
-                                <h2>Registration</h2>   
-                                <p>You need to register on the portal.</p>
-                            </article>
+        <article class="process-info">
+            <h2>Registration</h2>   
+            <p>You need to register on the portal.</p>
+        </article>
 
-                        </div> <!--  end .process-layout -->
+    </div> 
 
-                    </div> <!--  end .col-lg-3 -->
+</div> 
+<div class="col-lg-6 col-md-offset-0 col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12">
 
-                    <div class="col-lg-6 col-md-offset-0 col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12">
+    <div class="process-layout">
 
-                        <div class="process-layout">
+        <figure class="process-img">
+            <img src="images/process_2.jpg" alt="process" />
+            <div class="step">
+                <h3>2</h3>
+            </div>
+        </figure> 
 
-                            <figure class="process-img">
-                                <img src="images/process_2.jpg" alt="process" />
-                                <div class="step">
-                                    <h3>2</h3>
-                                </div>
-                            </figure> <!-- end .cau<h5 class="step">1</h5>se-img  -->
+        <article class="process-info">                                   
+            <h2>Notification</h2>
+            <p>You will recieve a notification whenever there is a need of blood matching your profile.</p>
+        </article>
 
-                            <article class="process-info">                                   
-                                <h2>Notification</h2>
-                                <p>You will recieve a notification whenever there is a need of blood matching your profile.</p>
-                            </article>
+    </div>
 
-                        </div> <!--  end .process-layout -->
-
-                    </div> <!--  end .col-lg-3 -->
-
+</div> 
 
 
-                    <div class="col-lg-6 col-md-offset-0 col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12">
 
-                        <div class="process-layout">
+<div class="col-lg-6 col-md-offset-0 col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12">
 
-                            <figure class="process-img">
-                                <img src="images/process_2.jpg" alt="process" />
-                                <div class="step">
-                                    <h3>3</h3>
-                                </div>
-                            </figure> <!-- end .cau<h5 class="step">1</h5>se-img  -->
+    <div class="process-layout">
 
-                            <article class="process-info">                                   
-                                <h2>Screening</h2>
-                                <p>A drop of blood from your finger will take for simple test to ensure that your blood iron levels are proper enough for donation process.</p>
-                            </article>
+        <figure class="process-img">
+            <img src="images/process_3.jpg" alt="process" />
+            <div class="step">
+                <h3>3</h3>
+            </div>
+        </figure> 
 
-                        </div> <!--  end .process-layout -->
+        <article class="process-info">                                   
+            <h2>Screening</h2>
+            <p>A blood sample will be taken for simple blood group test and to ensure that your blood iron levels are proper enough for donation process.</p>
+        </article>
 
-                    </div> <!--  end .col-lg-3 -->
+    </div> 
+</div>
 
+<div class="col-lg-6 col-md-offset-0 col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12">
 
-                    <div class="col-lg-6 col-md-offset-0 col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12">
+    <div class="process-layout">
 
-                        <div class="process-layout">
+        <figure class="process-img">
+            <img src="images/process_4.jpg" alt="process" />
+            <div class="step">
+                <h3>4</h3>
+            </div>
+        </figure> 
 
-                            <figure class="process-img">
-                                <img src="images/process_3.jpg" alt="process" />
-                                <div class="step">
-                                    <h3>4</h3>
-                                </div>
-                            </figure> <!-- end .cause-img  -->
+        <article class="process-info">
+            <h2>Donation</h2>
+            <p>After ensuring and passed screening test successfully you will be directed to a donor bed for donation. It will take only 6-10 minutes.</p>
+        </article>
 
-                            <article class="process-info">
-                                <h2>Donation</h2>
-                                <p>After ensuring and passed screening test successfully you will be directed to a donor bed for donation. It will take only 6-10 minutes.</p>
-                            </article>
+    </div> 
 
-                        </div> <!--  end .process-layout -->
+</div> 
 
-                    </div> <!--  end .col-lg-3 -->
+</div> 
 
-                </div> <!--  end .row --> 
+            </div> 
 
-            </div> <!--  end .container  -->
-
-        </section> <!--  end .section-process -->
+        </section> 
         
         
         
-        <!--  SECTION CAMPAIGNS   -->
 
         <section class="section-content-block section-secondary-bg" >
 
@@ -253,9 +243,9 @@ if($_SESSION["utype"] !=='U'){
                         <h2>OUR UPCOMING CAMPAIGNS</h2>
                         <span class="heading-separator heading-separator-horizontal"></span>
                         <h4>Encourage new donors to join and continue to give blood.</h4>
-                    </div> <!-- end .col-sm-12  -->                       
+                    </div>                        
 
-                </div> <!-- end .row  -->
+                </div>
                 
                 <div class="row margin-top-48">
                     <div class="col-md-12 col-sm-12">
@@ -281,7 +271,6 @@ if($_SESSION["utype"] !=='U'){
 
         </section>
 
-        <!--  SECTION INFO   -->
 
         <section class="section-content-block section-secondary-bg">
 
@@ -312,200 +301,190 @@ if($_SESSION["utype"] !=='U'){
                                 <li>Finally, Try to get a good night sound sleep after donation.</li>
                             </ul>
 
-                        </div> <!--  end .about-details -->  
+                        </div>  
                
-                    </div> <!--  end col-lg-4  -->
+                    </div> 
                     <div class="col-lg-4 col-md-12 col-sm-12"></div>
 
-                </div> <!--  end .row  -->
+                </div> 
 
-            </div> <!-- end row  -->
+            </div> 
 
-            </div> <!--  end .container -->
+            </div>
 
-        </section>  <!--  end .appointment-section  -->
+        </section>  
 
-        <!-- SECTION CTA  -->   
 
         <section class="cta-section-2">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 col-sm-12 col-xs-12">
                         <h2>We have taken the inititative to help the students in case of any emergency.</h2>
-                    </div> <!--  end .col-md-8  -->
-                </div> <!--  end .row  -->
+                    </div> 
+                </div> 
             </div>
         </section>         
 
-        <!-- START FOOTER  -->
-
         <footer>            
 
-            <section class="footer-widget-area footer-widget-area-bg">
+                <section class="footer-widget-area footer-widget-area-bg">
 
-                <div class="container">
+                    <div class="container">
 
-                    <div class="row">
+                        <div class="row">
 
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
-                            <div class="about-footer">
+                                <div class="about-footer">
 
-                                <div class="row">
+                                    <div class="row">
 
-                                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
-                                        <img src="images/logo_footer.png" alt="Logo" />
-                                    </div> <!--  end col-lg-3-->
+                                        <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                                            <img src="images/logo_footer.png" alt="Logo" />
+                                        </div>
 
-                                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
-                                        <p>
-                                            We are working towards the welfare of the students and other members of Lovely Professional University. 
-                                            LBS is a platform for blood requirement and emergency. The aim is to provide one stop solution to this need.
-                                        </p>
-                                    </div> <!--  end .col-lg-9  -->
+                                        <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                                            <p>
+                                                We are working towards the welfare of the students and other members of Lovely Professional University. 
+                                                LBS is a platform for blood requirement and emergency. The aim is to provide one stop solution to this need.
+                                            </p>
+                                        </div> 
 
-                                </div> <!--  end .row -->
+                                    </div> 
 
-                            </div> <!--  end .about-footer  -->
+                                </div>
 
-                        </div> <!--  end .col-md-12  -->
+                            </div>
 
-                    </div> <!--  end .row  -->
+                        </div>
 
-                    <div class="row"> 						                      
+                        <div class="row"> 						                      
 
-                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
 
-                            <div class="footer-widget">
+                                <div class="footer-widget">
 
-                                <div class="sidebar-widget-wrapper">
+                                    <div class="sidebar-widget-wrapper">
 
-                                    <div class="footer-widget-header clearfix">
-                                        <h3>Contact Us</h3>
-                                    </div>  <!--  end .footer-widget-header --> 
-
-
-                                    <div class="textwidget">                                       
-
-                                        <i class="fa fa-envelope-o fa-contact"></i> <p><a href="mailto:lpubloodservice@gmail.com">lpubloodservice@gmail.com</a></p>
-
-                                        <i class="fa fa-location-arrow fa-contact"></i> <p>UniHospital, LPU<br/>Phagwara, Punjab</p>
-
-                                        <i class="fa fa-phone fa-contact"></i> <p>Mobile:&nbsp; +91-7017349434</p>                              
-
-                                    </div>
-
-                                </div> <!-- end .footer-widget-wrapper  -->
-
-                            </div> <!--  end .footer-widget  -->
-
-                        </div> <!--  end .col-md-4 col-sm-12 -->  
-                        <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="footer-widget-header clearfix">
+                                            <h3>Contact Us</h3>
+                                        </div> 
 
 
-                        </div> <!--  end .col-md-4 col-sm-12 -->  
+                                        <div class="textwidget">                                       
 
-                        <div class="col-md-6 col-sm-12 col-xs-12">
+                                            <i class="fa fa-envelope-o fa-contact"></i> <p><a href="mailto:lpubloodservice@gmail.com">lpubloodservice@gmail.com</a></p>
 
-                            <div class="footer-widget clearfix">
+                                            <i class="fa fa-location-arrow fa-contact"></i> <p>UniHospital, LPU<br/>Phagwara, Punjab</p>
 
-                                <div class="sidebar-widget-wrapper">
+                                            <i class="fa fa-phone fa-contact"></i> <p>Mobile:&nbsp; +91-7017349434</p>                              
 
-                                    <div class="footer-widget-header clearfix">
-                                        <h3>Useful Links</h3>
-                                    </div>  <!--  end .footer-widget-header --> 
+                                        </div>
+
+                                    </div> 
+
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
 
 
-                                    <ul class="footer-useful-links">
+                            </div>
 
-                                        <li>
-                                            <a href="index.php">
-                                                <i class="fa fa-caret-right fa-footer"></i>
-                                                Home
-                                            </a>
-                                        </li>
+                            <div class="col-md-6 col-sm-12 col-xs-12">
 
-                                        <li>
-                                            <a href="about-us.php">
-                                                <i class="fa fa-caret-right fa-footer"></i>
-                                                About Us
-                                            </a>
-                                        </li>
+                                <div class="footer-widget clearfix">
 
-                                        <li>
-                                            <a href="services.php">
-                                                <i class="fa fa-caret-right fa-footer"></i>
-                                                Services
-                                            </a>
-                                        </li>
+                                    <div class="sidebar-widget-wrapper">
 
-                                        <li>
-                                            <a href="faq.php">
-                                                <i class="fa fa-caret-right fa-footer"></i>
-                                                Frequently Asked Questions
-                                            </a>
-                                        </li>
+                                        <div class="footer-widget-header clearfix">
+                                            <h3>Useful Links</h3>
+                                        </div> 
 
-                                        <li>
-                                            <a href="contact.php">
-                                                <i class="fa fa-caret-right fa-footer"></i>
-                                                Contact Us
-                                            </a>
-                                        </li>                
 
-                                    </ul>
+                                        <ul class="footer-useful-links">
 
-                                </div> <!--  end .footer-widget  -->        
+                                            <li>
+                                                <a href="index.php">
+                                                    <i class="fa fa-caret-right fa-footer"></i>
+                                                    Home
+                                                </a>
+                                            </li>
 
-                            </div> <!--  end .footer-widget  -->            
+                                            <li>
+                                                <a href="about-us.php">
+                                                    <i class="fa fa-caret-right fa-footer"></i>
+                                                    About Us
+                                                </a>
+                                            </li>
 
-                        </div> <!--  end .col-md-4 col-sm-12 -->    
+                                            <li>
+                                                <a href="services.php">
+                                                    <i class="fa fa-caret-right fa-footer"></i>
+                                                    Services
+                                                </a>
+                                            </li>
 
-                         
+                                            <li>
+                                                <a href="faq.php">
+                                                    <i class="fa fa-caret-right fa-footer"></i>
+                                                    Frequently Asked Questions
+                                                </a>
+                                            </li>
 
-                    </div> <!-- end row  -->
+                                            <li>
+                                                <a href="contact.php">
+                                                    <i class="fa fa-caret-right fa-footer"></i>
+                                                    Contact Us
+                                                </a>
+                                            </li>                
 
-                </div> <!-- end .container  -->
+                                        </ul>
 
-            </section> <!--  end .footer-widget-area  -->
+                                    </div>       
 
-            <!--FOOTER CONTENT  -->
+                                </div>       
 
-            <section class="footer-contents">
+                            </div>
+                            
 
-                <div class="container">
+                        </div>
 
-                    <div class="row clearfix">
-                        
-                        <div class="col-md-12 col-sm-12 text-center">
-                            <p class="copyright-text"> Copyright 2020 - LPU Blood Service. All Rights Reserved.</p>
-                        </div>  <!-- end .col-sm-6  -->
+                    </div>
 
-                    </div> <!-- end .row  -->                                    
+                </section>
 
-                </div> <!--  end .container  -->
 
-            </section> <!--  end .footer-content  -->
+                <section class="footer-contents">
 
-        </footer>
+                    <div class="container">
 
-        <!-- END FOOTER  -->
+                        <div class="row clearfix">
+                            
+                            <div class="col-md-12 col-sm-12 text-center">
+                                <p class="copyright-text"> Copyright 2020 - LPU Blood Service. All Rights Reserved.</p>
+                            </div> 
 
-        <!-- Back To Top Button  -->
+                        </div>                                    
 
-        <a id="backTop">Back To Top</a>
+                    </div>
 
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/wow.min.js"></script>
-        <script src="js/jquery.backTop.min.js"></script>
-        <script src="js/waypoints.min.js"></script>
-        <script src="js/waypoints-sticky.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/jquery.stellar.min.js"></script>
-        <script src="js/jquery.counterup.min.js"></script>
-        <script src="js/venobox.min.js"></script>
-        <script src="js/custom-scripts.js"></script>
+                </section>
+
+            </footer>
+
+                <a id="backTop">Back To Top</a>
+
+                <script src="js/jquery.min.js"></script>
+                <script src="js/bootstrap.min.js"></script>
+                <script src="js/wow.min.js"></script>
+                <script src="js/jquery.backTop.min.js"></script>
+                <script src="js/waypoints.min.js"></script>
+                <script src="js/waypoints-sticky.min.js"></script>
+                <script src="js/jquery.stellar.min.js"></script>
+                <script src="js/venobox.min.js"></script>
+                <script src="js/custom-scripts.js"></script>
+
+
     </body>
 
 

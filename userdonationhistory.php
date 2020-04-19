@@ -37,7 +37,6 @@
         <meta name="author" content="LPU">
         <link rel="shortcut icon" href="images/favicon.png" />
 
-        <!-- The styles -->
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" >
         <link href="css/animate.css" rel="stylesheet" type="text/css" >
@@ -51,7 +50,6 @@
             <span class="margin-bottom"><img src="images/loader.gif" alt="" /></span>
         </div>
 
-        <!--  HEADER -->
 
         <header class="main-header clearfix" data-sticky_header="true">
         
@@ -95,9 +93,7 @@
 
             </section>
 
-        </header> <!-- end main-header  -->
-
-        <!--  PAGE HEADING -->
+        </header> 
 
         <section class="page-header" data-stellar-background-ratio="1.2">
 
@@ -115,13 +111,12 @@
 
                     </div>
 
-                </div> <!-- end .row  -->
+                </div> 
 
-            </div> <!-- end .container  -->
+            </div> 
 
-        </section> <!-- end .page-header  -->
+        </section> 
 
-        <!--  MAIN CONTENT  -->
 
         <section class="section-content-block">
 
@@ -129,8 +124,6 @@
 
                 <div class="row">
                     
-                <!-- <div class="col-lg-1 col-md-1 col-sm-0"></div>
-                <div class="col-lg-8 col-md-8 col-sm-12"> -->
                 <?php
                 echo 'Total Donations='.$rowcount;
                 
@@ -178,8 +171,7 @@
                             ?>
                     </tbody>
                 </table>
-                <!-- </div>
-                <div class="col-lg-2 col-md-2 col-sm-0"></div> -->
+                
 
                 </div>   
 
@@ -191,178 +183,168 @@
 
             
 
-        </section> <!-- end .section-content-block  -->
-
-        <!-- START FOOTER  -->
-
+        </section> 
         <footer>            
 
-            <section class="footer-widget-area footer-widget-area-bg">
+                <section class="footer-widget-area footer-widget-area-bg">
 
-                <div class="container">
+                    <div class="container">
 
-                    <div class="row">
+                        <div class="row">
 
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
-                            <div class="about-footer">
+                                <div class="about-footer">
 
-                                <div class="row">
+                                    <div class="row">
 
-                                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
-                                        <img src="images/logo_footer.png" alt="Logo" />
-                                    </div> <!--  end col-lg-3-->
+                                        <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                                            <img src="images/logo_footer.png" alt="Logo" />
+                                        </div>
 
-                                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
-                                        <p>
-                                            We are working towards the welfare of the students and other members of Lovely Professional University. 
-                                            LBS is a platform for blood requirement and emergency. The aim is to provide one stop solution to this need.
-                                        </p>
-                                    </div> <!--  end .col-lg-9  -->
+                                        <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                                            <p>
+                                                We are working towards the welfare of the students and other members of Lovely Professional University. 
+                                                LBS is a platform for blood requirement and emergency. The aim is to provide one stop solution to this need.
+                                            </p>
+                                        </div> 
 
-                                </div> <!--  end .row -->
+                                    </div> 
 
-                            </div> <!--  end .about-footer  -->
+                                </div>
 
-                        </div> <!--  end .col-md-12  -->
+                            </div>
 
-                    </div> <!--  end .row  -->
+                        </div>
 
-                    <div class="row"> 						                      
+                        <div class="row"> 						                      
 
-                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
 
-                            <div class="footer-widget">
+                                <div class="footer-widget">
 
-                                <div class="sidebar-widget-wrapper">
+                                    <div class="sidebar-widget-wrapper">
 
-                                    <div class="footer-widget-header clearfix">
-                                        <h3>Contact Us</h3>
-                                    </div>  <!--  end .footer-widget-header --> 
-
-
-                                    <div class="textwidget">                                       
-
-                                        <i class="fa fa-envelope-o fa-contact"></i> <p><a href="mailto:lpubloodservice@gmail.com">lpubloodservice@gmail.com</a></p>
-
-                                        <i class="fa fa-location-arrow fa-contact"></i> <p>UniHospital, LPU<br/>Phagwara, Punjab</p>
-
-                                        <i class="fa fa-phone fa-contact"></i> <p>Mobile:&nbsp; +91-7017349434</p>                              
-
-                                    </div>
-
-                                </div> <!-- end .footer-widget-wrapper  -->
-
-                            </div> <!--  end .footer-widget  -->
-
-                        </div> <!--  end .col-md-4 col-sm-12 -->  
-                        <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="footer-widget-header clearfix">
+                                            <h3>Contact Us</h3>
+                                        </div> 
 
 
-                        </div> <!--  end .col-md-4 col-sm-12 -->  
+                                        <div class="textwidget">                                       
 
-                        <div class="col-md-6 col-sm-12 col-xs-12">
+                                            <i class="fa fa-envelope-o fa-contact"></i> <p><a href="mailto:lpubloodservice@gmail.com">lpubloodservice@gmail.com</a></p>
 
-                            <div class="footer-widget clearfix">
+                                            <i class="fa fa-location-arrow fa-contact"></i> <p>UniHospital, LPU<br/>Phagwara, Punjab</p>
 
-                                <div class="sidebar-widget-wrapper">
+                                            <i class="fa fa-phone fa-contact"></i> <p>Mobile:&nbsp; +91-7017349434</p>                              
 
-                                    <div class="footer-widget-header clearfix">
-                                        <h3>Useful Links</h3>
-                                    </div>  <!--  end .footer-widget-header --> 
+                                        </div>
+
+                                    </div> 
+
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
 
 
-                                    <ul class="footer-useful-links">
+                            </div>
 
-                                        <li>
-                                            <a href="index.php">
-                                                <i class="fa fa-caret-right fa-footer"></i>
-                                                Home
-                                            </a>
-                                        </li>
+                            <div class="col-md-6 col-sm-12 col-xs-12">
 
-                                        <li>
-                                            <a href="about-us.php">
-                                                <i class="fa fa-caret-right fa-footer"></i>
-                                                About Us
-                                            </a>
-                                        </li>
+                                <div class="footer-widget clearfix">
 
-                                        <li>
-                                            <a href="services.php">
-                                                <i class="fa fa-caret-right fa-footer"></i>
-                                                Services
-                                            </a>
-                                        </li>
+                                    <div class="sidebar-widget-wrapper">
 
-                                        <li>
-                                            <a href="faq.php">
-                                                <i class="fa fa-caret-right fa-footer"></i>
-                                                Frequently Asked Questions
-                                            </a>
-                                        </li>
+                                        <div class="footer-widget-header clearfix">
+                                            <h3>Useful Links</h3>
+                                        </div> 
 
-                                        <li>
-                                            <a href="contact.php">
-                                                <i class="fa fa-caret-right fa-footer"></i>
-                                                Contact Us
-                                            </a>
-                                        </li>                
 
-                                    </ul>
+                                        <ul class="footer-useful-links">
 
-                                </div> <!--  end .footer-widget  -->        
+                                            <li>
+                                                <a href="index.php">
+                                                    <i class="fa fa-caret-right fa-footer"></i>
+                                                    Home
+                                                </a>
+                                            </li>
 
-                            </div> <!--  end .footer-widget  -->            
+                                            <li>
+                                                <a href="about-us.php">
+                                                    <i class="fa fa-caret-right fa-footer"></i>
+                                                    About Us
+                                                </a>
+                                            </li>
 
-                        </div> <!--  end .col-md-4 col-sm-12 -->    
+                                            <li>
+                                                <a href="services.php">
+                                                    <i class="fa fa-caret-right fa-footer"></i>
+                                                    Services
+                                                </a>
+                                            </li>
 
-                         
+                                            <li>
+                                                <a href="faq.php">
+                                                    <i class="fa fa-caret-right fa-footer"></i>
+                                                    Frequently Asked Questions
+                                                </a>
+                                            </li>
 
-                    </div> <!-- end row  -->
+                                            <li>
+                                                <a href="contact.php">
+                                                    <i class="fa fa-caret-right fa-footer"></i>
+                                                    Contact Us
+                                                </a>
+                                            </li>                
 
-                </div> <!-- end .container  -->
+                                        </ul>
 
-            </section> <!--  end .footer-widget-area  -->
+                                    </div>       
 
-            <!--FOOTER CONTENT  -->
+                                </div>       
 
-            <section class="footer-contents">
+                            </div>
+                            
 
-                <div class="container">
+                        </div>
 
-                    <div class="row clearfix">
-                        
-                        <div class="col-md-12 col-sm-12 text-center">
-                            <p class="copyright-text"> Copyright 2020 - LPU Blood Service. All Rights Reserved.</p>
-                        </div>  <!-- end .col-sm-6  -->
+                    </div>
 
-                    </div> <!-- end .row  -->                                    
+                </section>
 
-                </div> <!--  end .container  -->
 
-            </section> <!--  end .footer-content  -->
+                <section class="footer-contents">
 
-        </footer>
+                    <div class="container">
 
-        <!-- END FOOTER  -->
+                        <div class="row clearfix">
+                            
+                            <div class="col-md-12 col-sm-12 text-center">
+                                <p class="copyright-text"> Copyright 2020 - LPU Blood Service. All Rights Reserved.</p>
+                            </div> 
 
-        <!-- Back To Top Button  -->
+                        </div>                                    
 
-        <a id="backTop">Back To Top</a>
+                    </div>
 
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/wow.min.js"></script>
-        <script src="js/jquery.backTop.min.js"></script>
-        <script src="js/waypoints.min.js"></script>
-        <script src="js/waypoints-sticky.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/jquery.stellar.min.js"></script>
-        <script src="js/jquery.counterup.min.js"></script>
-        <script src="js/venobox.min.js"></script>
-        <script src="js/custom-scripts.js"></script>
+                </section>
+
+            </footer>
+
+                <a id="backTop">Back To Top</a>
+
+                <script src="js/jquery.min.js"></script>
+                <script src="js/bootstrap.min.js"></script>
+                <script src="js/wow.min.js"></script>
+                <script src="js/jquery.backTop.min.js"></script>
+                <script src="js/waypoints.min.js"></script>
+                <script src="js/waypoints-sticky.min.js"></script>
+                <script src="js/jquery.stellar.min.js"></script>
+                <script src="js/venobox.min.js"></script>
+                <script src="js/custom-scripts.js"></script>
+
 
     </body>
+
 
 </html>

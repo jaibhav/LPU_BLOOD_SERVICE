@@ -181,11 +181,10 @@
                     <div class="signup-form">
 
                         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-                            <h2>Search by Registration Number</h2>
+                                <h3>Search Donors by Registration Number</h3>
                             
                             
                             <div class="form-group">
-                            <label>Enter Registration Number</label>
                             <input type="text" class="form-control" name="regno" placeholder="Registration Number" required="required">
 
                             </div>

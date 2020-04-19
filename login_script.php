@@ -1,8 +1,6 @@
 <?php
-// Initialize the session
 session_start();
  
-// Check if the user is already logged in, if yes then redirect him to welcome page
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
     if($_SESSION["utype"] =='U'){
         header("location: index_user.php");
@@ -15,10 +13,8 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
     
 }
  
-// Include config file
 require_once "config.php";
  
-// Define variables and initialize with empty values
 $username = $password = "";
 $username_err = $password_err = "";
  
@@ -41,7 +37,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     
     // Validate credentials
     if(empty($username_err) && empty($password_err)){
-        // Prepare a select statement
         $sql = "SELECT id,username, password FROM users WHERE username = ?";
         
         if($stmt = mysqli_prepare($link, $sql)){
@@ -76,7 +71,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             $_SESSION["username"] = $username;
                             $_SESSION["utype"]= $row["user_type"];  
                             
-                            // Redirect user to welcome page
+                            // Redirect user to home page
                             if($_SESSION["utype"] =='U'){
                                 header("location: index_user.php");
                                 
@@ -86,24 +81,20 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                                     
                             }
                         } else{
-                            // Display an error message if password is not valid
                             $password_err = "The password you entered was not valid.";
                         }
                     }
                 } else{
-                    // Display an error message if username doesn't exist
                     $username_err = "No account found with that username.";
                 }
             } else{
                 echo "Oops! Something went wrong. Please try again later.";
             }
 
-            // Close statement
             mysqli_stmt_close($stmt);
         }
     }
     
-    // Close connection
     mysqli_close($link);
 }
 ?>

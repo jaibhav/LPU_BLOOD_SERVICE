@@ -23,11 +23,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         <meta name="author" content="LPU">
         <link rel="shortcut icon" href="images/favicon.png" />
 
-        <!-- The styles -->
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" >
         <link href="css/animate.css" rel="stylesheet" type="text/css" >
-        <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" >
         <link href="css/venobox.css" rel="stylesheet" type="text/css" >
         <link rel="stylesheet" href="css/styles.css" />
 
@@ -36,8 +34,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         <div id="preloader">
             <span class="margin-bottom"><img src="images/loader.gif" alt="" /></span>
         </div>
-
-        <!--  HEADER -->
 
         <header class="main-header clearfix" data-sticky_header="true">
         
@@ -81,9 +77,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
             </section>
 
-        </header> <!-- end main-header  -->
+        </header> 
 
-        <!--  PAGE HEADING -->
 
         <section class="page-header">
 
@@ -99,13 +94,12 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
                     </div>
 
-                </div> <!-- end .row  -->
+                </div>
 
-            </div> <!-- end .container  -->
+            </div>
 
-        </section> <!-- end .page-header  -->
+        </section> 
         
-        <!--  FEATURED ABOUT US SECTION-->
 
         <section class="section-content-block">
  
@@ -122,8 +116,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                                 <div class="col-lg-12 col-md-12 col-sm-12 text-center no-img-separator">
                                     <h2><strong>Who We Are?</strong></h2>
                                     <span class="heading-separator heading-separator-horizontal"></span>
-                                </div> <!-- end .col-sm-10  --> 
-
+                                </div>
                             </div>
 
                             <div class="about-details"> 
@@ -139,20 +132,19 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                                     <li>The extra care of a multi-disciplinary team.</li>
                                 </ul>
 
-                            </div> <!--  end .about-details -->  
+                            </div>   
 
                         </div>
 
-                    </div> <!--  end .col-lg-12 col-md-6 col-sm-12 col-xs-12 -->  
+                    </div> 
 
-                </div> <!--  end .row  -->
+                </div>
             </div>
 
-        </section> <!--  end .section-about-us -->
+        </section> 
 
-        <!-- SECTION TEAM   -->
 
-        <section class="section-content-block section-custom-bg" data-bg_img='images/team_feat_bg.jpg' data-bg_size='cover' data-bg_position='top center' data-bg_opacity="0">
+        <section class="section-content-block section-custom-bg" >
 
         <div class="container margin-top-48 margin-bottom-48 wow fadeInLeft">
                 <div class="row section-heading-wrapper margin-bottom-11">
@@ -160,7 +152,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                     <div class="col-lg-12 col-md-12 col-sm-12 text-center no-img-separator">
                         <h2><strong>Our Team</strong></h2>
                         <span class="heading-separator heading-separator-horizontal"></span>
-                    </div> <!-- end .col-sm-10  --> 
+                    </div> 
 
                 </div>
                 
@@ -171,12 +163,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                             <div class="team-layout-1 theme-custom-box-shadow theme-custom-box-animation">
 
                                 <figure class="team-member">
-                                    <a href="#" title="ALEXANDER GARY">
-                                        <img src="images/team_9.jpg" alt="ALEXANDER GARY"/>
-                                    </a>
+                                        <img src="images/team_1.jpg" alt="JAIBHAV THUKRAL"/>
 
-                                </figure> <!-- end. team-member  -->
-
+                                </figure> 
                                 <article class="team-info">
                                     <h3>JAIBHAV THUKRAL</h3>                                   
                                     <h4>BACK-END DEVELOPER</h4>
@@ -186,24 +175,21 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
                                     <div class="text-center clearfix">
                                        <h3>11710641</h3>
-                                    </div> <!-- end .author-social-box  -->
+                                    </div> 
 
                                 </div>                             
 
-                            </div> <!--  end team-layout-1 -->
-
-                        </div> <!--  end .col-md-4 col-sm-12  -->
+                            </div> 
+                        </div> 
 
                         <div class="col-md-4 col-sm-12">
 
                             <div class="team-layout-1 theme-custom-box-shadow theme-custom-box-animation">
 
                                 <figure class="team-member">
-                                    <a href="#" title="MELISSA MUNOZ">
-                                        <img src="images/team_6.jpg" alt="MELISSA MUNOZ" />
-                                    </a>
+                                        <img src="images/team_2.jpg" alt="PRAYAS" />
 
-                                </figure> <!-- end. team-member  -->
+                                </figure> 
 
                                 <article class="team-info">
                                     <h3>PRAYAS</h3>                                   
@@ -213,24 +199,21 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
                                     <div class="text-center clearfix">
                                        <h3>11710015</h3>
-                                    </div> <!-- end .author-social-box  -->
-
+                                    </div> 
                                 </div>                             
 
-                            </div> <!--  end team layout-1 -->
+                            </div> 
 
-                        </div> <!--  end .col-md-4 col-sm-12  -->
+                        </div> 
 
                         <div class="col-md-4 col-sm-12">
 
                             <div class="team-layout-1 theme-custom-box-shadow theme-custom-box-animation">
 
                                 <figure class="team-member">
-                                    <a href="#" title="JOHN ABRAHAM">
-                                        <img src="images/team_7.jpg" alt="JOHN ABRAHAM" />
-                                    </a>                               
+                                        <img src="images/team_3.jpg" alt="MANSI SINGH" />
 
-                                </figure> <!-- end. team-member  -->
+                                </figure> 
 
                                 <article class="team-info">
                                     <h3>MANSI SINGH</h3>                                   
@@ -239,23 +222,24 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                                 <div class="team-info">
 
                                     <div class="text-center clearfix">
-                                       <h3>11710641</h3>
-                                    </div> <!-- end .author-social-box  -->
+                                       <h3>11703557</h3>
+                                    </div> 
 
                                 </div>                             
 
-                            </div> <!--  end team-layout-1 -->
+                            </div> 
 
-                        </div> <!--  end .col-md-4 col-sm-12  -->  
+                        </div> 
 
 
-                    </div> <!-- end .row  --> 
+                    </div>  
                     
 
-            </div> <!-- end .container  -->
+                    </div> 
+                    
 
+            </div> 
 
-        <!-- START FOOTER  -->
 
         <footer>            
 
@@ -273,22 +257,22 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
                                     <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
                                         <img src="images/logo_footer.png" alt="Logo" />
-                                    </div> <!--  end col-lg-3-->
+                                    </div>
 
                                     <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
                                         <p>
                                             We are working towards the welfare of the students and other members of Lovely Professional University. 
                                             LBS is a platform for blood requirement and emergency. The aim is to provide one stop solution to this need.
                                         </p>
-                                    </div> <!--  end .col-lg-9  -->
+                                    </div> 
 
-                                </div> <!--  end .row -->
+                                </div> 
 
-                            </div> <!--  end .about-footer  -->
+                            </div>
 
-                        </div> <!--  end .col-md-12  -->
+                        </div>
 
-                    </div> <!--  end .row  -->
+                    </div>
 
                     <div class="row"> 						                      
 
@@ -300,7 +284,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
                                     <div class="footer-widget-header clearfix">
                                         <h3>Contact Us</h3>
-                                    </div>  <!--  end .footer-widget-header --> 
+                                    </div> 
 
 
                                     <div class="textwidget">                                       
@@ -313,15 +297,14 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
                                     </div>
 
-                                </div> <!-- end .footer-widget-wrapper  -->
+                                </div> 
 
-                            </div> <!--  end .footer-widget  -->
-
-                        </div> <!--  end .col-md-4 col-sm-12 -->  
+                            </div>
+                        </div>
                         <div class="col-md-4 col-sm-6 col-xs-12">
 
 
-                        </div> <!--  end .col-md-4 col-sm-12 -->  
+                        </div>
 
                         <div class="col-md-6 col-sm-12 col-xs-12">
 
@@ -331,7 +314,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
                                     <div class="footer-widget-header clearfix">
                                         <h3>Useful Links</h3>
-                                    </div>  <!--  end .footer-widget-header --> 
+                                    </div> 
 
 
                                     <ul class="footer-useful-links">
@@ -373,21 +356,19 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
                                     </ul>
 
-                                </div> <!--  end .footer-widget  -->        
+                                </div>       
 
-                            </div> <!--  end .footer-widget  -->            
+                            </div>       
 
-                        </div> <!--  end .col-md-4 col-sm-12 -->    
-
+                        </div>
                          
 
-                    </div> <!-- end row  -->
+                    </div>
 
-                </div> <!-- end .container  -->
+                </div>
 
-            </section> <!--  end .footer-widget-area  -->
+            </section>
 
-            <!--FOOTER CONTENT  -->
 
             <section class="footer-contents">
 
@@ -397,19 +378,15 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                         
                         <div class="col-md-12 col-sm-12 text-center">
                             <p class="copyright-text"> Copyright 2020 - LPU Blood Service. All Rights Reserved.</p>
-                        </div>  <!-- end .col-sm-6  -->
+                        </div> 
 
-                    </div> <!-- end .row  -->                                    
+                    </div>                                    
 
-                </div> <!--  end .container  -->
+                </div>
 
-            </section> <!--  end .footer-content  -->
+            </section>
 
         </footer>
-
-        <!-- END FOOTER  -->
-
-        <!-- Back To Top Button  -->
 
         <a id="backTop">Back To Top</a>
 
@@ -419,11 +396,11 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         <script src="js/jquery.backTop.min.js"></script>
         <script src="js/waypoints.min.js"></script>
         <script src="js/waypoints-sticky.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
         <script src="js/jquery.stellar.min.js"></script>
-        <script src="js/jquery.counterup.min.js"></script>
         <script src="js/venobox.min.js"></script>
         <script src="js/custom-scripts.js"></script>
+
+        
     </body>
 
 

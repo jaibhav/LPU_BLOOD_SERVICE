@@ -181,11 +181,10 @@
                     <div class="signup-form">
 
                         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-                            <h2>Search by BG</h2>
+                            <h3>Search Donors by Blood Group</h3>
                             
                             
                             <div class="form-group">
-                            <label>Select Blood Group</label>
                                 <select class="form-control" name="bgrp" required>
                                     <option value="" disabled selected hidden>Select your blood group</option>    
                                     <option value="A+">A+</option>

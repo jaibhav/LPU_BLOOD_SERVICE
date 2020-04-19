@@ -1,16 +1,12 @@
 <?php
 
-//session_start();
-// Include config file
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
     
 require_once "config.php";
 
-// require PATH 'phpmailer/includes/PHPMailer.php';
-// require PATH 'phpmailer/includes/SMTP.php';
-// require PATH 'phpmailer/includes/Exception .php';
+
 require 'D:\SOFTWARES\xampp\htdocs\blood_service\phpmailer/PHPMailer.php';
 require 'D:\SOFTWARES\xampp\htdocs\blood_service\phpmailer/SMTP.php';
 require 'D:\SOFTWARES\xampp\htdocs\blood_service\phpmailer/Exception.php';
@@ -20,7 +16,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $bgrp=trim($_POST["bgrp"]);
 
     $sql_brequest="SELECT username,mobno FROM users where bgrp='$bgrp' ";
-    //echo $_SESSION["utype"];
     $brequest_query=mysqli_query($link,$sql_brequest);
             
             // Attempt to execute the prepared statement
@@ -74,21 +69,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
                 }
 
-
-                
-                
-                
-           // } 
-            // else{
-            //     echo "Something went wrong. Please try again later.";
-            // }
-
-            // Close statement
-           
-        
-    
-    // Close connection
-    //mysqli_close($link);
 }
 ?>
  

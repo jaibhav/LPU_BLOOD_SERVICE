@@ -1,5 +1,4 @@
 <?php
-// Include config file
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
@@ -84,11 +83,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             else{ 
                                 $mail->smtpClose();
                                 echo '<script>alert("Password Changed Successfully"); window.location="logout.php"</script>';
-                                //sleep(5);
 
                             }
                             
-                           // header("location:logout.php");
                         }
                         
                 }

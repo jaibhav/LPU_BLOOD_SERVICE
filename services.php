@@ -17,11 +17,8 @@ if(isset($_SESSION["loggedin"])){
         <meta name="author" content="xenioushk">
         <link rel="shortcut icon" href="images/favicon.png" />
 
-        <!-- The styles -->
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-        <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" />
-        <link href="css/owl.theme.css" rel="stylesheet" type="text/css" />
         <link href="css/animate.css" rel="stylesheet" type="text/css" />
         <link href="css/venobox.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="css/styles.css" type="text/css" />
@@ -33,7 +30,6 @@ if(isset($_SESSION["loggedin"])){
             <span class="margin-bottom"><img src="images/loader.gif" alt="Loading......" /></span>
         </div>
 
-        <!--  HEADER -->
 
         <header class="main-header clearfix" data-sticky_header="true">
         
@@ -75,10 +71,8 @@ if(isset($_SESSION["loggedin"])){
 
             </section>
 
-        </header> <!-- end main-header  -->
-        
-        <!--  PAGE HEADING -->
-        
+        </header> 
+
         <section class="page-header">
 
             <div class="container">
@@ -93,194 +87,180 @@ if(isset($_SESSION["loggedin"])){
 
                     </div>
 
-                </div> <!-- end .row  -->
+                </div> 
+            </div> 
 
-            </div> <!-- end .container  -->
-
-        </section> <!-- end .page-header  -->
-        
-        <!--  SERVICES SECTION-->
+        </section> 
 
         <section class="section-content-block section-services-bg">
 
             <div class="container wow fadeInUp">
 
                
-            </div> <!--  end .container  -->
+            </div> 
+        </section>
+    
+ <footer>            
 
-        </section> <!--  end .section-services -->
+                <section class="footer-widget-area footer-widget-area-bg">
+
+                    <div class="container">
+
+                        <div class="row">
+
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                                <div class="about-footer">
+
+                                    <div class="row">
+
+                                        <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                                            <img src="images/logo_footer.png" alt="Logo" />
+                                        </div>
+
+                                        <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                                            <p>
+                                                We are working towards the welfare of the students and other members of Lovely Professional University. 
+                                                LBS is a platform for blood requirement and emergency. The aim is to provide one stop solution to this need.
+                                            </p>
+                                        </div> 
+
+                                    </div> 
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="row"> 						                      
+
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+
+                                <div class="footer-widget">
+
+                                    <div class="sidebar-widget-wrapper">
+
+                                        <div class="footer-widget-header clearfix">
+                                            <h3>Contact Us</h3>
+                                        </div> 
+
+
+                                        <div class="textwidget">                                       
+
+                                            <i class="fa fa-envelope-o fa-contact"></i> <p><a href="mailto:lpubloodservice@gmail.com">lpubloodservice@gmail.com</a></p>
+
+                                            <i class="fa fa-location-arrow fa-contact"></i> <p>UniHospital, LPU<br/>Phagwara, Punjab</p>
+
+                                            <i class="fa fa-phone fa-contact"></i> <p>Mobile:&nbsp; +91-7017349434</p>                              
+
+                                        </div>
+
+                                    </div> 
+
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+
+
+                            </div>
+
+                            <div class="col-md-6 col-sm-12 col-xs-12">
+
+                                <div class="footer-widget clearfix">
+
+                                    <div class="sidebar-widget-wrapper">
+
+                                        <div class="footer-widget-header clearfix">
+                                            <h3>Useful Links</h3>
+                                        </div> 
+
+
+                                        <ul class="footer-useful-links">
+
+                                            <li>
+                                                <a href="index.php">
+                                                    <i class="fa fa-caret-right fa-footer"></i>
+                                                    Home
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="about-us.php">
+                                                    <i class="fa fa-caret-right fa-footer"></i>
+                                                    About Us
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="services.php">
+                                                    <i class="fa fa-caret-right fa-footer"></i>
+                                                    Services
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="faq.php">
+                                                    <i class="fa fa-caret-right fa-footer"></i>
+                                                    Frequently Asked Questions
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="contact.php">
+                                                    <i class="fa fa-caret-right fa-footer"></i>
+                                                    Contact Us
+                                                </a>
+                                            </li>                
+
+                                        </ul>
+
+                                    </div>       
+
+                                </div>       
+
+                            </div>
                             
-        <!-- START FOOTER  -->
 
-        <footer>            
+                        </div>
 
-            <section class="footer-widget-area footer-widget-area-bg">
+                    </div>
 
-                <div class="container">
-
-                    <div class="row">
-
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
-                            <div class="about-footer">
-
-                                <div class="row">
-
-                                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
-                                        <img src="images/logo_footer.png" alt="Logo" />
-                                    </div> <!--  end col-lg-3-->
-
-                                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
-                                        <p>
-                                            We are working towards the welfare of the students and other members of Lovely Professional University. 
-                                            LBS is a platform for blood requirement and emergency. The aim is to provide one stop solution to this need.
-                                        </p>
-                                    </div> <!--  end .col-lg-9  -->
-
-                                </div> <!--  end .row -->
-
-                            </div> <!--  end .about-footer  -->
-
-                        </div> <!--  end .col-md-12  -->
-
-                    </div> <!--  end .row  -->
-
-                    <div class="row"> 						                      
-
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-
-                            <div class="footer-widget">
-
-                                <div class="sidebar-widget-wrapper">
-
-                                    <div class="footer-widget-header clearfix">
-                                        <h3>Contact Us</h3>
-                                    </div>  <!--  end .footer-widget-header --> 
+                </section>
 
 
-                                    <div class="textwidget">                                       
+                <section class="footer-contents">
 
-                                        <i class="fa fa-envelope-o fa-contact"></i> <p><a href="mailto:lpubloodservice@gmail.com">lpubloodservice@gmail.com</a></p>
+                    <div class="container">
 
-                                        <i class="fa fa-location-arrow fa-contact"></i> <p>UniHospital, LPU<br/>Phagwara, Punjab</p>
+                        <div class="row clearfix">
+                            
+                            <div class="col-md-12 col-sm-12 text-center">
+                                <p class="copyright-text"> Copyright 2020 - LPU Blood Service. All Rights Reserved.</p>
+                            </div> 
 
-                                        <i class="fa fa-phone fa-contact"></i> <p>Mobile:&nbsp; +91-7017349434</p>                              
+                        </div>                                    
 
-                                    </div>
+                    </div>
 
-                                </div> <!-- end .footer-widget-wrapper  -->
+                </section>
 
-                            </div> <!--  end .footer-widget  -->
+            </footer>
 
-                        </div> <!--  end .col-md-4 col-sm-12 -->  
-                        <div class="col-md-4 col-sm-6 col-xs-12">
+                <a id="backTop">Back To Top</a>
 
-
-                        </div> <!--  end .col-md-4 col-sm-12 -->  
-
-                        <div class="col-md-6 col-sm-12 col-xs-12">
-
-                            <div class="footer-widget clearfix">
-
-                                <div class="sidebar-widget-wrapper">
-
-                                    <div class="footer-widget-header clearfix">
-                                        <h3>Useful Links</h3>
-                                    </div>  <!--  end .footer-widget-header --> 
+                <script src="js/jquery.min.js"></script>
+                <script src="js/bootstrap.min.js"></script>
+                <script src="js/wow.min.js"></script>
+                <script src="js/jquery.backTop.min.js"></script>
+                <script src="js/waypoints.min.js"></script>
+                <script src="js/waypoints-sticky.min.js"></script>
+                <script src="js/jquery.stellar.min.js"></script>
+                <script src="js/venobox.min.js"></script>
+                <script src="js/custom-scripts.js"></script>
 
 
-                                    <ul class="footer-useful-links">
-
-                                        <li>
-                                            <a href="index.php">
-                                                <i class="fa fa-caret-right fa-footer"></i>
-                                                Home
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="about-us.php">
-                                                <i class="fa fa-caret-right fa-footer"></i>
-                                                About Us
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="services.php">
-                                                <i class="fa fa-caret-right fa-footer"></i>
-                                                Services
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="faq.php">
-                                                <i class="fa fa-caret-right fa-footer"></i>
-                                                Frequently Asked Questions
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="contact.php">
-                                                <i class="fa fa-caret-right fa-footer"></i>
-                                                Contact Us
-                                            </a>
-                                        </li>                
-
-                                    </ul>
-
-                                </div> <!--  end .footer-widget  -->        
-
-                            </div> <!--  end .footer-widget  -->            
-
-                        </div> <!--  end .col-md-4 col-sm-12 -->    
-
-                         
-
-                    </div> <!-- end row  -->
-
-                </div> <!-- end .container  -->
-
-            </section> <!--  end .footer-widget-area  -->
-
-            <!--FOOTER CONTENT  -->
-
-            <section class="footer-contents">
-
-                <div class="container">
-
-                    <div class="row clearfix">
-                        
-                        <div class="col-md-12 col-sm-12 text-center">
-                            <p class="copyright-text"> Copyright 2020 - LPU Blood Service. All Rights Reserved.</p>
-                        </div>  <!-- end .col-sm-6  -->
-
-                    </div> <!-- end .row  -->                                    
-
-                </div> <!--  end .container  -->
-
-            </section> <!--  end .footer-content  -->
-
-        </footer>
-
-        <!-- END FOOTER  -->
-
-        <!-- Back To Top Button  -->
-
-        <a id="backTop">Back To Top</a>
-
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/wow.min.js"></script>
-        <script src="js/jquery.backTop.min.js"></script>
-        <script src="js/waypoints.min.js"></script>
-        <script src="js/waypoints-sticky.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/jquery.stellar.min.js"></script>
-        <script src="js/jquery.counterup.min.js"></script>
-        <script src="js/venobox.min.js"></script>
-        <script src="js/custom-scripts.js"></script>
     </body>
 
 
-<!-- Mirrored from templates.bwlthemes.com/blood_donation/v_2/element-service.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Mar 2020 17:57:33 GMT -->
 </html>

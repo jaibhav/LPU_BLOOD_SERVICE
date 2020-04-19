@@ -24,11 +24,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         <link rel="shortcut icon" href="images/favicon.png" />
 
 
-        <!-- The styles -->
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" >
         <link href="css/animate.css" rel="stylesheet" type="text/css" >
-        <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" >
         <link href="css/venobox.css" rel="stylesheet" type="text/css" >
         <link rel="stylesheet" href="css/styles.css" />
 
@@ -38,7 +36,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             <span class="margin-bottom"><img src="images/loader.gif" alt="" /></span>
         </div>
 
-        <!--  HEADER -->
 
         <header class="main-header clearfix" data-sticky_header="true">
 
@@ -84,10 +81,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
             </section>
 
-        </header> <!-- end main-header  -->
-
-
-        <!--  PAGE HEADING -->
+        </header> 
 
         <section class="page-header">
 
@@ -98,18 +92,15 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                     <div class="col-sm-12 text-center">
 
                         <h3>
-                            FAQ
-                        </h3>
+                           F.A.Q.
+                      </h3>
 
                     </div>
 
-                </div> <!-- end .row  -->
+                </div>
 
-            </div> <!-- end .container  -->
-
-        </section> <!-- end .page-header  -->
-
-        <!--  SECTION FAQ -->
+            </div> 
+        </section>
 
         <section class="section-content-block section-faq">
 
@@ -118,13 +109,10 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 <div class="row">
 
                     <div class="col-md-12 col-sm-12 text-center">
-                        <h2 class="section-heading">F.A.Q</h2>
-                        <p class="section-subheading">
-                            know more about blood donation and know how you can help people.
-                        </p>
-                    </div> <!-- end .col-sm-10  -->
-
-                </div> <!--  end .row  -->
+                        <h3 class="section-heading">Get answers to some common questions!</h3>
+                        
+                    </div>
+                </div>
 
                 <div class="row">
 
@@ -133,12 +121,12 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                         <div class="panel panel-default faq-box">
                             <div class="panel-heading">
                                 <h4 class="panel-title">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" >What are preliminary psychological disorder ?</a>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">How to do I get notified of Blood Need</a>
                                 </h4>
                             </div>
                             <div id="collapseOne" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    We all to some extent are on an End of Life journey. For some of our clients and their family additional care and help is required as they progress through this journey. Care on Call work closely with.
+                                    You will receive a notification on your registered email and mobile number whenever blood is needed matching your group.
                                 </div>
                             </div>
                         </div>
@@ -146,54 +134,54 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                         <div class="panel panel-default faq-box">
                             <div class="panel-heading">
                                 <h4 class="panel-title">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">How many sessions can I have with my counselor?</a>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Can I request for blood in case of emergency?</a>
                                 </h4>
                             </div>
                             <div id="collapseTwo" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    We all to some extent are on an End of Life journey. For some of our clients and their family additional care and help is required as they progress through this journey. Care on Call work closely with.
+                                    Yes, you can use the Blood Request option on your dashboard to submit a request for generating notification to available donors.
                                 </div>
                             </div>
                         </div>
                         <div class="panel panel-default faq-box">
                             <div class="panel-heading">
                                 <h4 class="panel-title">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"> How can I be sure effective form of counseling?</a>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Are the donors notified once I submit a request?</a>
                                 </h4>
                             </div>
                             <div id="collapseThree" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    We all to some extent are on an End of Life journey. For some of our clients and their family additional care and help is required as they progress through this journey. Care on Call work closely with.
+                                    No, We will review your request as per the reason specified and will send out the notification to applicable donors once it is accepted.
                                 </div>
                             </div>
                         </div>
 
-                        <div class="panel panel-default faq-box">
+                    </div> 
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="accordion2">
+
+                    <div class="panel panel-default faq-box">
                             <div class="panel-heading">
                                 <h4 class="panel-title">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" >How is my privacy protected?</a>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" >How do I know if my request is accepted or rejected?</a>
                                 </h4>
                             </div>
                             <div id="collapseFour" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    We all to some extent are on an End of Life journey. For some of our clients and their family additional care and help is required as they progress through this journey. Care on Call work closely with.
+                                    You can use the View Request Status option on your dashboard to check the status of your request.
                                 </div>
                             </div>
                         </div> 
 
-                    </div> <!-- end .col-md-6  -->
-
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="accordion2">
-
                         <div class="panel panel-default faq-box">
                             <div class="panel-heading">
                                 <h4 class="panel-title">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive" >What are preliminary psychological disorder ?</a>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive" >Where to reach or contact to donate blood ?</a>
                                 </h4>
                             </div>
                             <div id="collapseFive" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    We all to some extent are on an End of Life journey. For some of our clients and their family additional care and help is required as they progress through this journey. Care on Call work closely with.
+                                    You need to report at Baldev Raj Mittal UniHospital or contact at our helpline number.
                                 </div>
                             </div>
                         </div>
@@ -201,228 +189,192 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                         <div class="panel panel-default faq-box">
                             <div class="panel-heading">
                                 <h4 class="panel-title">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseSix">How many sessions can I have with my counselor?</a>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseSix">Can I see my blood donation history?</a>
                                 </h4>
                             </div>
                             <div id="collapseSix" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    We all to some extent are on an End of Life journey. For some of our clients and their family additional care and help is required as they progress through this journey. Care on Call work closely with.
+                                    Yes, you can use View Donation History option on your dashboard to check your entire blood donation history through our platform.
                                 </div>
                             </div>
                         </div>
 
-                        <div class="panel panel-default faq-box">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseSeven"> How can I be sure effective form of counseling?</a>
-                                </h4>
-                            </div>
-                            <div id="collapseSeven" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    We all to some extent are on an End of Life journey. For some of our clients and their family additional care and help is required as they progress through this journey. Care on Call work closely with.
-                                </div>
-                            </div>
-                        </div>
+                    </div>                   
 
-                        <div class="panel panel-default faq-box">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseEight" >How is my privacy protected?</a>
-                                </h4>
-                            </div>
-                            <div id="collapseEight" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    We all to some extent are on an End of Life journey. For some of our clients and their family additional care and help is required as they progress through this journey. Care on Call work closely with.
-                                </div>
-                            </div>
-                        </div> 
+                </div> 
 
-                    </div> <!-- end .col-md-12  -->                    
+            </div>
 
-                </div> <!-- end .row  -->
-
-            </div> <!-- end .container  -->
-
-        </section> <!--  end .section-faq -->
+        </section> 
 
 
-        <!-- CLIENT LOGO SECTION  -->
 
         <section class="section-content-block section-secondary-bg">
 
            
-        </section> <!--  end .section-client-logo -->
+        </section> 
 
 
-        <!-- START FOOTER  -->
+ <footer>            
 
-        <footer>            
+                <section class="footer-widget-area footer-widget-area-bg">
 
-            <section class="footer-widget-area footer-widget-area-bg">
+                    <div class="container">
 
-                <div class="container">
+                        <div class="row">
 
-                    <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="about-footer">
 
-                            <div class="about-footer">
+                                    <div class="row">
 
-                                <div class="row">
+                                        <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                                            <img src="images/logo_footer.png" alt="Logo" />
+                                        </div>
 
-                                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
-                                        <img src="images/logo_footer.png" alt="Logo" />
-                                    </div> <!--  end col-lg-3-->
+                                        <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                                            <p>
+                                                We are working towards the welfare of the students and other members of Lovely Professional University. 
+                                                LBS is a platform for blood requirement and emergency. The aim is to provide one stop solution to this need.
+                                            </p>
+                                        </div> 
 
-                                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
-                                        <p>
-                                            We are working towards the welfare of the students and other members of Lovely Professional University. 
-                                            LBS is a platform for blood requirement and emergency. The aim is to provide one stop solution to this need.
-                                        </p>
-                                    </div> <!--  end .col-lg-9  -->
+                                    </div> 
 
-                                </div> <!--  end .row -->
+                                </div>
 
-                            </div> <!--  end .about-footer  -->
+                            </div>
 
-                        </div> <!--  end .col-md-12  -->
+                        </div>
 
-                    </div> <!--  end .row  -->
+                        <div class="row"> 						                      
 
-                    <div class="row"> 						                      
+                            <div class="col-md-6 col-sm-6 col-xs-12">
 
-                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="footer-widget">
 
-                            <div class="footer-widget">
+                                    <div class="sidebar-widget-wrapper">
 
-                                <div class="sidebar-widget-wrapper">
-
-                                    <div class="footer-widget-header clearfix">
-                                        <h3>Contact Us</h3>
-                                    </div>  <!--  end .footer-widget-header --> 
+                                        <div class="footer-widget-header clearfix">
+                                            <h3>Contact Us</h3>
+                                        </div> 
 
 
-                                    <div class="textwidget">                                       
+                                        <div class="textwidget">                                       
 
-                                        <i class="fa fa-envelope-o fa-contact"></i> <p><a href="mailto:lpubloodservice@gmail.com">lpubloodservice@gmail.com</a></p>
+                                            <i class="fa fa-envelope-o fa-contact"></i> <p><a href="mailto:lpubloodservice@gmail.com">lpubloodservice@gmail.com</a></p>
 
-                                        <i class="fa fa-location-arrow fa-contact"></i> <p>UniHospital, LPU<br/>Phagwara, Punjab</p>
+                                            <i class="fa fa-location-arrow fa-contact"></i> <p>UniHospital, LPU<br/>Phagwara, Punjab</p>
 
-                                        <i class="fa fa-phone fa-contact"></i> <p>Mobile:&nbsp; +91-7017349434</p>                              
+                                            <i class="fa fa-phone fa-contact"></i> <p>Mobile:&nbsp; +91-7017349434</p>                              
 
-                                    </div>
+                                        </div>
 
-                                </div> <!-- end .footer-widget-wrapper  -->
+                                    </div> 
 
-                            </div> <!--  end .footer-widget  -->
-
-                        </div> <!--  end .col-md-4 col-sm-12 -->  
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-
-
-                        </div> <!--  end .col-md-4 col-sm-12 -->  
-
-                        <div class="col-md-6 col-sm-12 col-xs-12">
-
-                            <div class="footer-widget clearfix">
-
-                                <div class="sidebar-widget-wrapper">
-
-                                    <div class="footer-widget-header clearfix">
-                                        <h3>Useful Links</h3>
-                                    </div>  <!--  end .footer-widget-header --> 
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
 
 
-                                    <ul class="footer-useful-links">
+                            </div>
 
-                                        <li>
-                                            <a href="index.php">
-                                                <i class="fa fa-caret-right fa-footer"></i>
-                                                Home
-                                            </a>
-                                        </li>
+                            <div class="col-md-6 col-sm-12 col-xs-12">
 
-                                        <li>
-                                            <a href="about-us.php">
-                                                <i class="fa fa-caret-right fa-footer"></i>
-                                                About Us
-                                            </a>
-                                        </li>
+                                <div class="footer-widget clearfix">
 
-                                        <li>
-                                            <a href="services.php">
-                                                <i class="fa fa-caret-right fa-footer"></i>
-                                                Services
-                                            </a>
-                                        </li>
+                                    <div class="sidebar-widget-wrapper">
 
-                                        <li>
-                                            <a href="faq.php">
-                                                <i class="fa fa-caret-right fa-footer"></i>
-                                                Frequently Asked Questions
-                                            </a>
-                                        </li>
+                                        <div class="footer-widget-header clearfix">
+                                            <h3>Useful Links</h3>
+                                        </div> 
 
-                                        <li>
-                                            <a href="contact.php">
-                                                <i class="fa fa-caret-right fa-footer"></i>
-                                                Contact Us
-                                            </a>
-                                        </li>                
 
-                                    </ul>
+                                        <ul class="footer-useful-links">
 
-                                </div> <!--  end .footer-widget  -->        
+                                            <li>
+                                                <a href="index.php">
+                                                    <i class="fa fa-caret-right fa-footer"></i>
+                                                    Home
+                                                </a>
+                                            </li>
 
-                            </div> <!--  end .footer-widget  -->            
+                                            <li>
+                                                <a href="about-us.php">
+                                                    <i class="fa fa-caret-right fa-footer"></i>
+                                                    About Us
+                                                </a>
+                                            </li>
 
-                        </div> <!--  end .col-md-4 col-sm-12 -->    
+                                            <li>
+                                                <a href="services.php">
+                                                    <i class="fa fa-caret-right fa-footer"></i>
+                                                    Services
+                                                </a>
+                                            </li>
 
-                         
+                                            <li>
+                                                <a href="faq.php">
+                                                    <i class="fa fa-caret-right fa-footer"></i>
+                                                    Frequently Asked Questions
+                                                </a>
+                                            </li>
 
-                    </div> <!-- end row  -->
+                                            <li>
+                                                <a href="contact.php">
+                                                    <i class="fa fa-caret-right fa-footer"></i>
+                                                    Contact Us
+                                                </a>
+                                            </li>                
 
-                </div> <!-- end .container  -->
+                                        </ul>
 
-            </section> <!--  end .footer-widget-area  -->
+                                    </div>       
 
-            <!--FOOTER CONTENT  -->
+                                </div>       
 
-            <section class="footer-contents">
+                            </div>
+                            
 
-                <div class="container">
+                        </div>
 
-                    <div class="row clearfix">
-                        
-                        <div class="col-md-12 col-sm-12 text-center">
-                            <p class="copyright-text"> Copyright 2020 - LPU Blood Service. All Rights Reserved.</p>
-                        </div>  <!-- end .col-sm-6  -->
+                    </div>
 
-                    </div> <!-- end .row  -->                                    
+                </section>
 
-                </div> <!--  end .container  -->
 
-            </section> <!--  end .footer-content  -->
+                <section class="footer-contents">
 
-        </footer>
+                    <div class="container">
 
-        <!-- END FOOTER  -->
+                        <div class="row clearfix">
+                            
+                            <div class="col-md-12 col-sm-12 text-center">
+                                <p class="copyright-text"> Copyright 2020 - LPU Blood Service. All Rights Reserved.</p>
+                            </div> 
 
-        <!-- Back To Top Button  -->
+                        </div>                                    
 
-        <a id="backTop">Back To Top</a>
+                    </div>
 
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/wow.min.js"></script>
-        <script src="js/jquery.backTop.min.js"></script>
-        <script src="js/waypoints.min.js"></script>
-        <script src="js/waypoints-sticky.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/jquery.stellar.min.js"></script>
-        <script src="js/jquery.counterup.min.js"></script>
-        <script src="js/venobox.min.js"></script>
-        <script src="js/custom-scripts.js"></script>
+                </section>
+
+            </footer>
+
+                <a id="backTop">Back To Top</a>
+
+                <script src="js/jquery.min.js"></script>
+                <script src="js/bootstrap.min.js"></script>
+                <script src="js/wow.min.js"></script>
+                <script src="js/jquery.backTop.min.js"></script>
+                <script src="js/waypoints.min.js"></script>
+                <script src="js/waypoints-sticky.min.js"></script>
+                <script src="js/jquery.stellar.min.js"></script>
+                <script src="js/venobox.min.js"></script>
+                <script src="js/custom-scripts.js"></script>
+
+
     </body>
 
 

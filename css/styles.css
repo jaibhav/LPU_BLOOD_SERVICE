@@ -199,6 +199,11 @@ select,
 textarea {
   margin: 0;
 }
+html,body{
+  min-height: 100%;
+}
+
+
 /***********************************************************************************************/
 /* 01. GENERAL STYLING  */
 /***********************************************************************************************/
@@ -428,6 +433,19 @@ cite:before {
   position: relative;
 }
 
+.container-flex {
+  margin-left: 20px;
+  margin-right: 20px;
+  min-height: 100%;
+}
+
+.container-flex h1{
+  padding-top: 20px;
+}
+
+.nav-items a{
+  width: max-content;
+}
 
 ol li {
   padding: 0;
@@ -442,6 +460,8 @@ span.label {
   border-radius: 0px;
   font-size: 100%;
 }
+
+
 /*-----  BUTTONS ----*/
 #btn,
 .btn {
@@ -474,9 +494,9 @@ span.label {
   margin-bottom: 0;
   letter-spacing: 0em;
   overflow: hidden;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 0px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px !important;
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;
@@ -532,6 +552,22 @@ span.label {
   width: 100%;
   
 }
+
+.home-card{
+  border: 2px;
+  border-style: inset;
+  border-color: crimson;
+  padding: 20px;
+  border-radius: 50px;
+  max-width: 500px;
+  margin: auto;
+  height: 250px;
+}
+
+.home-card .btn{
+  width: 200px;
+}
+
 
 /***********************************************************************************************/
 /* 02. HEADER */
@@ -690,6 +726,10 @@ header.one-page .navbar-nav > li > a span {
 background: #FF4419;
 color: #fff !important;
 height: 50px;
+border-radius: 50px;
+}
+.drop-down a.login-btn{
+  border-radius: 0px;
 }
 
 a.login-btn:hover {
@@ -1310,9 +1350,10 @@ background: #f69791 !important;
   background-attachment: scroll;
   background-color: transparent;
   background-image: url('../images/header-bg.jpg');
-  background-repeat: repeat;
-  background-size: initial;
-  border: 0px solid #FFF;
+  background-repeat: no-repeat;
+  background-size: contain;  
+  border: 0px solid #FFF;  
+  background-position: center;
 }
 .page-header:before {
   position: absolute;
@@ -1325,29 +1366,17 @@ background: #f69791 !important;
   z-index: -1;
 }
 .page-header h3 {
-  color: #FFFFFF;
+  color: #E4DCDC;
   text-align: center;
-  font-size: 36px;
+  font-size: 50px;
   line-height: 24px;
   font-weight: 700;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Arial Black', serif;
   margin: 24px 0;
   text-transform: uppercase;
   letter-spacing: 0.02em;
 }
-.page-header .page-breadcrumb {
-  font-size: 16px;
-  color: #FFFFFF;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.01em;
-}
-.page-header .page-breadcrumb a {
-  color: #FFFFFF;
-}
-.page-header .page-breadcrumb a:hover {
-  color: #EF3D32;
-}
+
 
 /***********************************************************************************************/
 /* 06. BLOG SINGLE PAGE */
@@ -1722,8 +1751,8 @@ footer p {
 .padding-bottom-100 {
   padding-bottom: 100px;
 }
-.padding-bottom-220 {
-  padding-bottom: 220px !important;
+.padding-bottom-185 {
+  padding-bottom: 185px !important;
 }
 /*----- RIGHT/LEFT PADDING ----*/
 .db {
@@ -1741,12 +1770,21 @@ footer p {
     margin-right: 0px;
     margin-bottom: 12px;
   }
+
+  #admin-cards .row{
+    margin-top: -25px;
+  }
+
+  .home-card{
+    margin-bottom: 20px;
+  }
   a.logo {
     text-align: center;
   }
   .navbar-default .navbar-nav li ul.drop-down {
     top: 68px;
   }
+
   .navbar-default .navbar-header {
     width: 100%;
     text-align: center;
@@ -1769,6 +1807,7 @@ footer p {
   .navbar-default .navbar .navbar-collapse {
     text-align: center;
   }
+
   .main-header {
     background: #2C2C2C;
     position: relative;
@@ -1818,6 +1857,7 @@ footer p {
     height: 50px;
     height: auto;
     text-align: center;
+    border-radius: 50px;
     }
   
 }
@@ -1831,6 +1871,13 @@ footer p {
   }
   .section-content-block {
     padding: 60px 0;
+  }
+
+  .home-card{
+    margin-bottom: 20px;
+  }
+  #admin-cards .row{
+    margin-top: -25px;
   }
 
   /*----- Section Heading ----*/
@@ -1877,6 +1924,7 @@ footer p {
     font-size: 20px;
     display: none;
   }
+
   .process-layout {
     margin: 0 0 32px 0;
   }
@@ -1919,6 +1967,7 @@ footer p {
   .section-faq .faq-box .panel-body {
     padding-left: 0;
   }
+
   .navbar-default .navbar-toggle {
     margin-top: 24px;
     -webkit-border-radius: 0px;
@@ -1944,6 +1993,7 @@ footer p {
     margin-top: 12px;
     padding: 12px 0;
   }
+
   .navbar-default .navbar-nav li ul.drop-down,
   .navbar-default .navbar-nav li ul.drop-down li ul.drop-down.level3 {
     background: transparent;
@@ -2063,6 +2113,12 @@ footer p {
   .main-header {
     background: #2C2C2C;
     position: relative;
+  }
+  .home-card{
+    margin-bottom: 20px;
+  }
+  #admin-cards .row{
+    margin-top: -25px;
   }
 
   .sticky-wrapper {
@@ -2307,6 +2363,27 @@ footer p {
   left: 0;
 }
 .signup-form h2:after{
+  right: 0;
+}
+.signup-form h4{
+  color: #636363;
+      margin: 0 0 15px;
+  position: relative;
+  text-align: center;
+  }
+.signup-form h4:before, .signup-form h4:after{
+  /* content: ""; */
+  height: 2px;
+  width: 30%;
+  background: #d4d4d4;
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+}	
+.signup-form h4:before{
+  left: 0;
+}
+.signup-form h4:after{
   right: 0;
 }
   .signup-form .hint-text{

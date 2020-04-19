@@ -1,20 +1,15 @@
 <?php
-// Include config file
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 require_once "config.php";
 
-// require PATH 'phpmailer/includes/PHPMailer.php';
-// require PATH 'phpmailer/includes/SMTP.php';
-// require PATH 'phpmailer/includes/Exception .php';
 require 'D:\SOFTWARES\xampp\htdocs\blood_service\phpmailer/PHPMailer.php';
 require 'D:\SOFTWARES\xampp\htdocs\blood_service\phpmailer/SMTP.php';
 require 'D:\SOFTWARES\xampp\htdocs\blood_service\phpmailer/Exception.php';
 
  
-// Define variables and initialize with empty values
 $username = $password = $confirm_password = "";
 $username_err = $password_err = $confirm_password_err = "";
  
@@ -89,7 +84,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             $mno=trim($_POST["mobno"]);
             $param_username = $username;
             $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
-            //$param_password = $password;
             $bgrp=trim($_POST["bgrp"]);
             
             // Attempt to execute the prepared statement
@@ -199,10 +193,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 // Redirect to login page
                 header("location: login.php");
                 
-           // } 
-            // else{
-            //     echo "Something went wrong. Please try again later.";
-            // }
 
             // Close statement
             mysqli_stmt_close($stmt);
