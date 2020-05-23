@@ -22,7 +22,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             if (mysqli_num_rows($brequest_query) == 0)
                 //error here
              {
-                 echo '<script>alert("No Donor Found"); window.location="request_loggedin.php"</script>';
+                 echo '<script>alert("No Donor Found"); window.location="request_blood.php"</script>';
                 // header("location: request_loggedin.php");
                 // exit;
                 echo "error";
@@ -59,7 +59,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 						echo $mail->ErrorInfo;
 					} 
 					else{ 
-                        echo '<script>alert("Successfully Sent"); window.location="request_loggedin.php"</script>';
+                        echo '<script>alert("Successfully Sent"); window.location="request_blood.php"</script>';
 
                     }
                     $mail->smtpClose();
